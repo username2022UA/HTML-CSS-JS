@@ -3,102 +3,99 @@
     <head>
         <title>Урок 3. Знакомство HTML теги (формы)</title>
         <meta http-equiv="Content-type" content="text/html;charset=utf-8" />
-        </head>
-        <body>
-            <form action="#" method="get">
+    </head>
+    <body>
+        <form action="#" method="get">
+            <div>
+                <p>username</p>
+                <input tabindex="1"  type="text" name="username"/>
+                <p>password</p>
+                <input tabindex="2" type="password" name="userpass"/>
+            </div>
+            <div>
+                <p>Телефон</p>
+                <input tabindex="3" type="tel" name="userphon"/>
+            </div>
+            <div>    
+                <p>Пол</p>
                 <div>
-                    <p>username</p>
-                    <input tabindex="1"  type="text" name="username"/>
-                    <p>password</p>
-                    <input tabindex="2" type="password" name="userpass"/>
-                </div>
-                <div>
-                    <p>Телефон</p>
-                    <input tabindex="3" type="tel" name="userphon"/>
-                </div>
-                <div>    
-                    <p>Пол</p>
-                    <div>
-                        <input tabindex="4" checked type="radio" name="gender" value="mail">Мужской
-                    </div>
-                    <div>
-                        <input tabindex="4" type="radio" name="gender" value="female">Женский
-                    </div>
+                    <input tabindex="4" checked type="radio" name="gender" value="mail">Мужской
                 </div>
                 <div>
-                    <p>Имущество</p>
-                    <div>
-                        <input tabindex="5" checked type="checkbox" name="car" value="yes">Автомобиль
-                    </div>
-                    <div>
-                        <input tabindex="6" type="checkbox" name="bike" value="yes">Велосипед
-                    </div>
-                    <div>
-                        <input tabindex="7" type="checkbox" name="house" value="yes">Квартира
-                    </div>
+                    <input tabindex="4" type="radio" name="gender" value="female">Женский
+                </div>
+                </div>
+            <div>
+                <p>Имущество</p>
+                <div>
+                    <input tabindex="5" checked type="checkbox" name="car" value="yes">Автомобиль
                 </div>
                 <div>
-                    <p>Комментарий:</p>
-                        <textarea tabindex="8" name="text" id="" cols="20" rows="5"></textarea>
+                    <input tabindex="6" type="checkbox" name="bike" value="yes">Велосипед
                 </div>
                 <div>
-                    <p>Любимый цвет</p>
-                    <div>
-                        <select tabindex="9" name="color">
-                            <option value="red">Красный</option>
-                            <option value="yellou">Жолтый</option>
-                            <option value="blue">Голубой</option>
-                        </select>
-                    </div>
+                    <input tabindex="7" type="checkbox" name="house" value="yes">Квартира
                 </div>
+            </div>
+            <div>
+                <p>Комментарий:</p>
+                <textarea tabindex="8" name="text" id="" cols="20" rows="5"></textarea>
+            </div>
+            <div>
+                <p>Любимый цвет</p>
                 <div>
-                    <p>Выберите фото</p>
-                    <input tabindex="10" type="file"/>
+                    <select tabindex="9" name="color">
+                        <option value="red">Красный</option>
+                        <option value="yellou">Жолтый</option>
+                        <option value="blue">Голубой</option>
+                    </select>
                 </div>
-                <div>
-                    <p>Действие:</p>
-                    <Button tabindex="11" type="submin">Отправить</Button>
-                    <button tabindex="12" type="reset">Очистить</button>
-                </div>
-            </form>
-            <h1>Алгоритмы сортировки. Сортировка слиянием</h1>
-            <p>Внимание! Практически весь материал этой лекции был в <a target="_blank" href="https://youtu.be/BaY1a0VPIsE">видеолекции.</a> Если вы всё хорошо усвоили,</br> просто
-                пробегитесь глазами и переходите дальше.</p>
+            </div>
+            <div>
+                <p>Выберите фото</p>
+                <input tabindex="10" type="file"/>
+            </div>
+            <div>
+                <p>Действие:</p>
+                <Button tabindex="11" type="submin">Отправить</Button>
+                <button tabindex="12" type="reset">Очистить</button>
+            </div>
+        </form>
 
-            <p>Этот алгоритм — рекурсивный, он разбивает одну большую задачу сортировки на подзадачи,</br>
-                 выполнение которых делают его ближе к решению изначальной большой задачи.</p>
+        <h1>Алгоритмы сортировки. Сортировка слиянием</h1>
+        <p>Внимание! Практически весь материал этой лекции был в <a target="_blank" href="https://youtu.be/BaY1a0VPIsE">видеолекции.</a> Если вы всё хорошо усвоили,</br> просто
+            пробегитесь глазами и переходите дальше.</p>
 
-            <p>Основная идея — разделение неотсортированного массива на две части и сортировка отдельных </br>
-                половинок по рекурсивному принципу. </p>
+        <p>Этот алгоритм — рекурсивный, он разбивает одну большую задачу сортировки на подзадачи,</br>
+            выполнение которых делают его ближе к решению изначальной большой задачи.</p>
 
-            <img src="Img/800.webp" alt="">
+        <p>Основная идея — разделение неотсортированного массива на две части и сортировка отдельных </br>
+            половинок по рекурсивному принципу. </p>
 
-            <p> Допустим, у нас есть n элементов для сортировки. Если n < 2, заканчиваем сортировку,
-                 иначе — сортируем</br> отдельно левую и правую части массива, и потом их объединяем.</p>
+        <img src="Img/800.webp" alt="">
 
-            <p>Давайте отсортируем массив </p>
+        <p> Допустим, у нас есть n элементов для сортировки. Если n < 2, заканчиваем сортировку,
+                иначе — сортируем</br> отдельно левую и правую части массива, и потом их объединяем.</p>
 
-            <img src="Img/800 (1).webp" alt="">
+        <p>Давайте отсортируем массив </p>
 
-            <p>Делим его на две части, и продолжаем делить, пока не получим подмассивы величиной 1, которые заведомо отсортированы.</p>
-            </br>
-            <p>Если с лекциями и теорией все пошло, как надо, вы без труда ответите на проверочные вопросы:</p>
-            <li> Почему бинарный поиск требует отсортированного массива?</li>
+        <img src="Img/800 (1).webp" alt="">
+
+        <p>Делим его на две части, и продолжаем делить, пока не получим подмассивы величиной 1, которые заведомо отсортированы.</p>
+        </br>
+        <p>Если с лекциями и теорией все пошло, как надо, вы без труда ответите на проверочные вопросы:</p>
+        <ul>
             <li>Почему бинарный поиск требует отсортированного массива?</li>
             <li>Почему оценка сортировки пузырьком равна O(n2)?</li>
             <li>Почему оценка сортировки вставками — это Ω(n)?</li>
             <li>Как работает сортировка выбором? Опишите в трех предложениях (или меньше).</li>
             <li>Каков верхний предел (наихудший случай) времени работы сортировки слиянием?</li>
-            <li>Каков верхний предел (наихудший случай) времени работы сортировки слиянием?</li>
-
-            <h2>Цели</h2>
+        </ul>
+        <h2>Цели</h2>
+        <ol>
             <li>Научиться работать с проектами, которые содержат несколько файлов.</li>
             <li>Научиться читать чужой исходный код.</li>
             <li>Научиться читать чужой исходный код.</li>
-
-        
-        </body>
-        
-
-    </html>
+        </ol>
+    </body>
 </html>
