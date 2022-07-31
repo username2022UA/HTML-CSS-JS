@@ -33,65 +33,34 @@ a:hover{text-decoration: none;}
 img{vertical-align: top;}
 
 h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
-.example-block {
+body{
     font-family: Arial;
     font-size: 14px;
     line-height: 25px;
     font-weight: 400;
     color: #000000;
+}
+.example-block {
     width: 600px;
     margin: 50px;
 }
 .example-string {
-    font-family: Arial;
-    font-size: 14px;
-    line-height: 25px;
-    font-weight: 400;
-    color: #000000;
-    margin-left: 50px;
-}
-.example-string-collor{
-    font-family: Arial;
-    font-size: 14px;
-    line-height: 25px;
-    font-weight: 400;
-    color: blue;
     margin-left: 50px;
 }
 .fit-content{
-    font-family: Arial;
-    font-size: 14px;
-    line-height: 25px;
-    font-weight: 400;
-    color: #000000;
     width: fit-content;
     margin: 50px 50px 50px 50px;
     height: 100px;
 }
 .inline{
-    font-family: Arial;
-    font-size: 14px;
-    line-height: 25px;
-    font-weight: 400;
-    color: #000000;
     margin-left: 50px;
     display: inline;
 }
 .block{
-    font-family: Arial;
-    font-size: 14px;
-    line-height: 25px;
-    font-weight: 400;
-    color: #000000;
     margin-left: 50px;
     
 }
 .inline-block{
-    font-family: Arial;
-    font-size: 14px;
-    line-height: 25px;
-    font-weight: 400;
-    color: #000000;
     width: fit-content;
     display: inline-block;
     margin: 50px;
