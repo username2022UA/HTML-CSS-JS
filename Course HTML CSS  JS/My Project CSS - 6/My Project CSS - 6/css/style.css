@@ -16,82 +16,95 @@ img{vertical-align: top;}
 h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
 /*--------------------*/
 body{
-    padding: 30px;
+    background-color: #e8e8e8;
 }
-.block {
-    margin: 0 0 30px 0;
+.content {
+    padding: 163px 0 857px 291px;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
-.block p{
-    font-size: 18px;
-    line-height: 24px;
-    margin: 0px 0px 20px 0px;
+.content-list{
+    font-size: 20px;
+    line-height: 36px;
+    margin: 0 0 150px 0;
 }
-.block p:nth-child(1){
-    background-color: yellow;
+.content-list li{
+    background: url('../img/check_icon_37.png') left no-repeat;
+    padding: 0 0 0 30px;
 }
-.block p:nth-child(2){
-    background-color: #eee;
+.list1 {
+    margin: 0 0 60px 0;
 }
-.block p:nth-child(3){
-    background-color: green;
+.list1 li:nth-child(1){
+    text-decoration: line-through;
 }
-.block p:nth-child(3):hover{
-    background-color:yellow;
+.list1 li:nth-child(2){
+    font-weight: 700;
+}
+.list1 li:nth-child(3){
+    font-style: italic;
+}
+.list1 li:nth-child(4){
+    text-transform: uppercase;
+    text-shadow: 2px 2px 5px #000;
+}
+.list2 {
+    margin: 0;
+}
+.list2 li:nth-child(1):hover{
+    text-decoration: line-through;
+}
+.list2 li:nth-child(2):hover{
+    font-weight: 700;
+}
+.list2 li:nth-child(3):hover{
+    font-style: italic;
+}
+.list2 li:nth-child(4):hover{
+    text-transform: uppercase;
+    text-shadow: 2px 2px 5px #000;
 }
 .link {
-    color: red;
+    margin: 0;
 }
-.textinput {
-    border: 1px solid grey;
-    height: 50px;
-    padding: 0 15px;
-    font-size: 18px;
-    width: 300px;
-    margin: 0 0 10px 0;
-}
-.textinput:focus{
-    box-shadow: 0 0 10px;
-}
-.textbutton {
-    display: block;
-    width: 300px;
-    height: 50px;
-    background-color: grey;
-    font-size: 18px;
-    color: #fff;
+.link a {
+    display: inline-block;
+    width: 199px;
+    height: 44px;
+    border-radius: 30px;
+    box-shadow: 0px 6px 40px 0px rgba(128,183,179,0.54);
+    background-color: #80b7b3;
+    text-align: center;
+    line-height: 45px;
+    font-size: 14px;
     text-transform: uppercase;
-    margin: 0 0 30px 0;
+    letter-spacing: 2.8px;
+    color: #ffffff;
+    margin: 0px 48px 139px 48px;
 }
-.textbutton:hover{
-    background-color: #333;
-    color: yellow;
+.link a span{
+    background: url('../img/shape_2_9.png') right no-repeat;
+    padding: 0 30px 0 0;
 }
-.textbutton:active{
-    background-color: #eee;
+.link a:nth-child(2):hover{
+    background-color: #3a5856;
+    box-shadow: 0px 6px 40px 0px rgba(2, 30, 28, 0.54);
 }
-.list {
+.link a:nth-child(3):active{
+    background-color: #818181;
+    box-shadow: 0px 6px 40px 0px rgba(43, 16, 1, 0.54);
 }
-.link:visited{
-    color: green;
+.text textarea {
+    display: inline-block;
+    width: 294px;
+    height: 52px;
+    background-color: #fff;
+    margin: 0 100px 0 0;
+    border: 1px solid #b0b0b0;
 }
-.link:hover{
-    text-decoration: underline;
-    color: blue;
+.textarea2 {
+    border: 1px solid #7fbed5;
 }
-.link:active{
-    color: yellow;
-}
-.list li{
-    font-size: 18px;
-    margin: 0 0 15px 0 ;
-}
-.list li:first-child{
-    color: green;
-}
-.list li:last-child{
-    color: blueviolet;
-    font-size: 20px;
-}
-.list li:nth-child(even){
-    text-transform: uppercase;
+.textarea2:focus{
+    border: 5px solid rgb(45, 143, 179)5;
+    box-shadow: 0px 0px 20px -1px rgba(48, 144, 180, 0.93);
 }
