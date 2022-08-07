@@ -30,6 +30,7 @@ body{
 .content-list li{
     background: url('../img/check_icon_37.png') left no-repeat;
     padding: 0 0 0 30px;
+    width: max-content;
 }
 .list1 {
     margin: 0 0 60px 0;
