@@ -1,0 +1,44 @@
+@import "nullstyle.scss";
+
+$fz:100px;
+$color1:#000;
+$color2:red;
+
+%tplborder{
+	border-bottom: 5px dashed red;
+}
+
+@mixin fontz ($f) {
+	font-size: $f;
+}
+  
+.block{
+	width: ;
+	background-color: #666;
+	padding: 30px;
+	line-height: 60px;
+	.block__text{
+		font-size: $fz;
+		span{
+			color: green;
+		}
+	}
+}
+.link{
+	color: $color2;
+	text-decoration: underline;
+	font-size: $fz;
+	.block &{
+		font-size: $fz;
+	}
+	&:hover{
+		color: green;
+	}
+	@extend %tplborder;
+}
+.link-2{
+	@include fontz(100px);
+	@extend %tplborder;
+	border-bottom: 5px dashed #000;
+}
+
