@@ -1,4 +1,20 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+@font-face {
+  font-family: "Conv";
+  src: url("../fonts/ACaslonPro-SemiboldItalic.eot");
+  src: local("☺"), url("../fonts/ACaslonPro-SemiboldItalic.woff") format("woff"), url("../fonts/ACaslonPro-SemiboldItalic.ttf") format("truetype"), url("../fonts/ACaslonPro-SemiboldItalic.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "W730";
+  src: url("../fonts/W730-Roman-Cd-Regular.eot");
+  src: local("☺"), url("../fonts/W730-Roman-Cd-Regular.woff") format("woff"), url("../fonts/W730-Roman-Cd-Regular.ttf") format("truetype"), url("../fonts/W730-Roman-Cd-Regular.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
 /*Обнуление*/
 * {
   padding: 0;
@@ -107,9 +123,12 @@ body {
   font-weight: 700;
 }
 .content .content__info .info__list1 li:nth-child(3) {
-  font-style: italic;
+  font-family: "W730";
+  letter-spacing: 3px;
+  font-size: 25px;
 }
 .content .content__info .info__list1 li:nth-child(4) {
+  font-family: "Covn";
   text-transform: uppercase;
 }
 .content .content__info .info__list2 li:hover:nth-child(1) {
@@ -119,9 +138,12 @@ body {
   font-weight: 700;
 }
 .content .content__info .info__list2 li:hover:nth-child(3) {
-  font-style: italic;
+  font-family: "W730";
+  letter-spacing: 3px;
+  font-size: 25px;
 }
 .content .content__info .info__list2 li:hover:nth-child(4) {
+  font-family: "Covn";
   text-transform: uppercase;
   text-shadow: 2px 2px 5px #000;
 }
@@ -169,6 +191,13 @@ body {
   font-size: 18px;
   line-height: 28px;
   width: 800px;
+}
+.content .text p:nth-child(1) {
+  font-family: "Oleo Script Swash Caps";
+}
+.content .text p:nth-child(2) {
+  font-family: Lato;
+  font-style: italic;
 }
 .content .text p {
   margin: 0px 0px 50px 0px;
