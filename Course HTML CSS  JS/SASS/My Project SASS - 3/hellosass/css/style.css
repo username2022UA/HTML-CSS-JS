@@ -77,6 +77,61 @@ body {
   font-family: "Lato";
 }
 
+.start {
+  width: 1920px;
+  height: 1080px;
+  margin: 0 auto;
+  padding: 165px 0 0px 0;
+  background: url("/img/bg_header_743.png");
+  color: #ffffff;
+}
+.start__body {
+  max-width: 850px;
+  margin: 0px auto 0px auto;
+}
+.start__logotip {
+  width: 195px;
+  height: 123px;
+  margin: 0px auto 165px auto;
+}
+.start__title {
+  text-align: center;
+  line-height: 40px;
+}
+.start__title p:nth-child(1) {
+  font-size: 34px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+.start__title p:nth-child(2) {
+  font-size: 26px;
+  font-weight: 400;
+  text-transform: none;
+  letter-spacing: 0.16em;
+  margin: 0px 0px 50px 0px;
+}
+.start__title::after {
+  content: "";
+  width: 105px;
+  height: 2px;
+  border: 1px solid #ffffff;
+  position: absolute;
+  margin: 0px 0px 100px 0px;
+  bottom: 0;
+  left: 50%;
+}
+.start__page {
+  text-align: center;
+  width: 182px;
+  height: 47px;
+  border: 1px solid #ffffff;
+  margin: 0 auto 100px auto;
+  font-size: 16px;
+  line-height: 1.2;
+  letter-spacing: 0.06em;
+  padding: 12px 0 0 0;
+}
+
 .about__body {
   max-width: 823px;
   margin: 0 auto;
