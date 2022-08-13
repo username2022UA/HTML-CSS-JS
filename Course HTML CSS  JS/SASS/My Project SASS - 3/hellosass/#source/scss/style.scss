@@ -102,11 +102,7 @@ body{
 	}
 }
 
-
-
- 
 //about
-
 .about {
 	width: 1920px;
 	height: 732px;
@@ -284,9 +280,8 @@ body{
 
 	&__row {
 		width: 950px;
-		height: 500px;
+		height: max-content;
 		margin: 0 auto;
-		padding: 10px;
 	}
 
 	&__user {
@@ -294,8 +289,6 @@ body{
 		height: max-content;
 		display: inline-block;
 		text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.347);
-
-
 		font-size: 14px;
 		line-height: 1.2;
 		font-weight: 700;
@@ -341,15 +334,13 @@ body{
 		text-transform: uppercase;
 		letter-spacing: 0.06em;
 		margin: 0px 0px 0px 375px;
-		
-
 	}
 
 	&__avtor {
 		width: 300px;
 		height: 300px;
 		display: inline-block;
-		margin: 0px 0px 0px 20px;
+		margin: 0px 0px 0px 50px;
 		position:absolute;
 	}
 
@@ -394,4 +385,42 @@ body{
 	}
 }
 
+//footer
+.footer {
 
+	&__body {
+		width: 1920px;
+		height: 274px;
+		margin: 0 auto;
+		background-color: #3c3c3c;width: 1920px;
+		padding: 40px 0 0 0 ;
+	}
+
+	&__logotip {
+		width: 122px;
+		height: 78px;
+		margin: 0px auto 40px auto;
+	}
+
+	&__nav {
+			max-width: max-content;
+			margin: 0px auto 40px auto;
+			& a{
+				flex: 0 30%;
+				width: max-content;
+				margin: 0px 20px 0px 20px;
+				text-shadow: 1px 0px 1px rgba(0, 0, 0, 0.367);
+				color: #a4a4a4ab;
+				
+			}
+	}
+
+	&__text {
+		width: max-content;
+		height: max-content;
+		margin: 0 auto;
+		color: #6c6c6c;
+		font-family: Arial, Helvetica, sans-serif;
+		letter-spacing: 1px;
+	}
+}
