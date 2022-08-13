@@ -333,9 +333,10 @@ body {
 }
 .contact__row {
   width: 950px;
-  height: 500px;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
   margin: 0 auto;
-  padding: 10px;
 }
 .contact__user {
   width: -webkit-max-content;
@@ -395,7 +396,7 @@ body {
   width: 300px;
   height: 300px;
   display: inline-block;
-  margin: 0px 0px 0px 20px;
+  margin: 0px 0px 0px 50px;
   position: absolute;
 }
 .contact__colum-text {
@@ -433,4 +434,45 @@ body {
 .contact__colum-mail a {
   color: #000;
   font-weight: 700;
+}
+
+.footer__body {
+  width: 1920px;
+  height: 274px;
+  margin: 0 auto;
+  background-color: #3c3c3c;
+  width: 1920px;
+  padding: 40px 0 0 0;
+}
+.footer__logotip {
+  width: 122px;
+  height: 78px;
+  margin: 0px auto 40px auto;
+}
+.footer__nav {
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
+  margin: 0px auto 40px auto;
+}
+.footer__nav a {
+  flex: 0 30%;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin: 0px 20px 0px 20px;
+  text-shadow: 1px 0px 1px rgba(0, 0, 0, 0.367);
+  color: rgba(164, 164, 164, 0.6705882353);
+}
+.footer__text {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  margin: 0 auto;
+  color: #6c6c6c;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 1px;
 }
