@@ -21,6 +21,8 @@ body{
 	margin: 0 auto;
 }
 
+//
+
 .hi {
 	background-color: #445162;
 	padding: 50px 0;
@@ -55,6 +57,8 @@ body{
 			}
 		}
 	}
+
+//
 
 .what {
 	padding: 50px 0;
@@ -94,6 +98,7 @@ body{
 	line-height: 36px;
 	color: #445161;
 }
+
 //
 
 .columns {
@@ -117,8 +122,6 @@ body{
 		padding: 0 8px;
 	}
 
-	&__item {
-	}
 }
 
 .item {
@@ -150,6 +153,89 @@ body{
 		color: #333333;
 	}
 }
+//
+
+.vertical {
+	padding: 50px 0;
+
+	&__titel {
+		text-align: center;
+		margin: 0px 0px 30px 0px;
+	}
+
+	&__body {
+		max-width: 990px;
+		margin: 0 auto;
+	}
+
+	&__row {
+		display: flex;
+		margin: 0 -22.5px;
+	}
+
+	&__column {
+		flex: 0 1 33.333%;
+		padding: 0 22.5px;
+		display: flex;
+	}
+
+	&__item {
+		background-color: #445162;
+		color: #ffffff;
+		border-radius: 5px;
+		border: 2px solid #445162;
+		padding: 0 0 20px 0;
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__sabtitle {
+		text-align: center;
+		font-size: 24px;			
+		text-transform: uppercase;
+		padding: 12px 0;
+	}
+
+	&__label {
+		text-align: center;
+		font-size: 40px;
+		line-height: 30px;
+		color: #445162;
+		background-color: #fff;
+		padding: 15px 0;
+	}
+
+	&__text {
+		line-height: 24px;
+		margin: 20px;
+		font-size: 14px;
+		flex: 1 1 auto;
+		p{
+			margin: 0px 0px 15px 0px;
+			&:last-child{
+				margin: 0px;
+			}
+		}
+	}
+
+	&__btm {
+		display: block;
+		margin: 0 20px;
+		height: 40px;
+		background-color: #fff;
+		line-height: 40px;
+		text-align: center;
+		font-weight: 700;
+		font-size: 18px;
+		color: #445161;
+		border-radius: 5px;
+	}
+}
+.conteiner {
+}
+.titel {
+}
+
 
 
 //
