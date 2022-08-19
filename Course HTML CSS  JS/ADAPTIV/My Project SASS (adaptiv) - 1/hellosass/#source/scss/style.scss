@@ -1,0 +1,47 @@
+// Файл обнуляющих стилей
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital@0;1&display=swap');
+
+@import "nullstyle.scss";
+
+body{
+	font-family: "lato";
+	max-width: 1600px;
+	margin: 0 auto;
+
+}
+.main {
+	height: 800px;
+	padding: 40px 0;
+	background: url(../img/bg_2.jpg);
+
+	&__column {
+		display: flex;
+	}
+}
+.container {
+	max-width: 600px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.main-menu {
+	font-size: 13px;
+line-height: 1.2;
+font-weight: 700;
+text-transform: uppercase;
+letter-spacing: 0.2em;
+color: #4d4959;
+
+	&__link {
+	}
+}
+.main-menu-list {
+	display:flex;
+	min-width: 200px;
+	justify-content: space-between;
+}
+.logo {
+	margin: 10px 0px 0px 0px;
+}
