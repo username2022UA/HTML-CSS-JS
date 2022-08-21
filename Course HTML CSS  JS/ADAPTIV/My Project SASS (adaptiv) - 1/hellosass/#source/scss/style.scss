@@ -197,36 +197,39 @@ body{
 	color: #353738;
 
 
-	@media (max-width:767px){
-		font-size: 14px;
-	}
+
 }
 
 //
 
 .vintage {
-	
+
 
 	&__image {
-		display: flex;
+		display:flex;
+		max-width: 66.666%;
 		img{
 			 max-width: 100%;
 			 @media (max-width:1200px) {
 				min-width: 100%;
 			}
 		}
+		@media (max-width:1200px) {
+			min-width: 100%;
+		}
 	}	
 
 	&__column {
-		max-width: 33.333%;
-		display: flex;
+		display:flex;
 		flex-direction: column;
-
+		max-width: 33.333%;
 		@media (max-width:1200px) {
 			max-width: 50%;
 		}
+		@media (max-width:767px){
+			max-width: 100%;
+		}
 	}
-
 
 	&__body {
 	}
@@ -242,6 +245,7 @@ body{
 	}
 
 	&__image-small {
+		display:flex;
 		img{
 			max-width: 100%;
 			@media (max-width:1200px) {
@@ -250,33 +254,39 @@ body{
 		}
 	}
 }
+
 .container-vin {
-	display: flex;
+	display:flex;
+	flex-wrap: wrap;
 	@media (max-width:1200px) {
+		flex-wrap: wrap;
+	}
+	@media (max-width:767px){
 		display: block;
 	}
 
-	
 }
+
 .body-text {
-	display: flex;
+	display:flex;
 	flex-direction: column;
 	align-items: center;
-	padding: 10% 30px;
+	padding: 8% 30px 8% 30px;
 	flex: 1 1 auto;
+
+
 	
 }
 .icon-column {
-	margin: 0 0 10% 0;
+	margin: 0 0 8% 0;
 	img{
-		@media (max-width:767px){
-			max-width: 70%;
-		}
+
 	}
 
 }
 .title {
 }
+
 .text-column {
 	font-size: 16px;
 	line-height: 29px;
