@@ -208,13 +208,25 @@ body{
 	
 
 	&__image {
-		
-	}
+		display: flex;
+		img{
+			 max-width: 100%;
+			 @media (max-width:1200px) {
+				min-width: 100%;
+			}
+		}
+	}	
 
 	&__column {
+		max-width: 33.333%;
 		display: flex;
 		flex-direction: column;
+
+		@media (max-width:1200px) {
+			max-width: 50%;
+		}
 	}
+
 
 	&__body {
 	}
@@ -229,25 +241,38 @@ body{
 	}
 
 	&__image-small {
-		
+		img{
+			max-width: 100%;
+			@media (max-width:1200px) {
+				min-width: 100%;
+			}
+		}
 	}
 }
 .container-vin {
 	display: flex;
-	
+	@media (max-width:1200px) {
+		display: block;
+	}
+
 	
 }
 .body-text {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	padding: 50px;
+	padding: 10% 30px;
 	flex: 1 1 auto;
-	border: 1px solid;
 	
 }
-.icon {
-	margin: 0px 0px 30px 0px;
+.icon-column {
+	margin: 0 0 10% 0;
+	img{
+		@media (max-width:767px){
+			max-width: 70%;
+		}
+	}
+
 }
 .title {
 }
@@ -257,7 +282,7 @@ body{
 	color: #848789;
 	text-align: center;
 	margin: 25px 0px 0 0px;
-	padding: 0 0 40px  0;
+	padding: 0 0 20px  0;
 	position: relative;
 	&::after{
 		content: '';
