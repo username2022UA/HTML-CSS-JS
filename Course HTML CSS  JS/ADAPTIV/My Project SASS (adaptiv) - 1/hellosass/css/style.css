@@ -273,6 +273,7 @@ body {
 @media (max-width: 767px) {
   .generation__text {
     font-size: 14px;
+    line-height: 24px;
   }
 }
 
@@ -370,4 +371,10 @@ body {
   margin: 0px 0px 0px -20px;
   bottom: 0;
   left: 50%;
+}
+@media (max-width: 767px) {
+  .text-column {
+    font-size: 14px;
+    line-height: 24px;
+  }
 }
