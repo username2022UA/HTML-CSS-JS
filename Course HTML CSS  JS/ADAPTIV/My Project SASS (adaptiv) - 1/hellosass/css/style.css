@@ -75,25 +75,67 @@ h1, h2, h3, h4, h5, h6 {
 /*--------------------*/
 body {
   font-family: "lato";
+}
+
+.wraper {
   max-width: 1600px;
   margin: 0 auto;
 }
 
 .main {
   height: 800px;
-  padding: 40px 0;
-  background: url(../img/bg_2.jpg);
+  background: url(../img/bg_2.jpg) 50% 50%/cover no-repeat;
+  padding: 40px 0 0 0;
+}
+@media (max-width: 1600px) {
+  .main {
+    padding: 30px 0 0 0;
+    height: 700px;
+  }
+}
+@media (max-width: 1200px) {
+  .main {
+    padding: 20px 0 0 0;
+    height: 600px;
+  }
+}
+@media (max-width: 992px) {
+  .main {
+    padding: 10px 0 0 0;
+    height: 500px;
+  }
+}
+@media (max-width: 767px) {
+  .main {
+    padding: 10px 0 0 0;
+    height: 300px;
+  }
 }
 .main__column {
   display: flex;
 }
 
 .container {
-  max-width: 600px;
+  max-width: 700px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+@media (max-width: 1200px) {
+  .container {
+    max-width: 600px;
+  }
+}
+@media (max-width: 992px) {
+  .container {
+    max-width: 500px;
+  }
+}
+@media (max-width: 767px) {
+  .container {
+    max-width: 400px;
+  }
 }
 
 .main-menu {
@@ -104,12 +146,193 @@ body {
   letter-spacing: 0.2em;
   color: #4d4959;
 }
+
 .main-menu-list {
   display: flex;
-  min-width: 200px;
+  min-width: 220px;
   justify-content: space-between;
+}
+@media (max-width: 1200px) {
+  .main-menu-list {
+    max-width: 200px;
+  }
+}
+@media (max-width: 992px) {
+  .main-menu-list {
+    min-width: 180px;
+  }
+}
+@media (max-width: 767px) {
+  .main-menu-list {
+    min-width: 160px;
+  }
 }
 
 .logo {
+  display: flex;
+  max-width: 100%;
   margin: 10px 0px 0px 0px;
+}
+@media (max-width: 1200px) {
+  .logo {
+    justify-content: center;
+  }
+}
+@media (max-width: 992px) {
+  .logo {
+    justify-content: center;
+  }
+}
+@media (max-width: 767px) {
+  .logo {
+    justify-content: center;
+  }
+}
+@media (max-width: 1200px) {
+  .logo img {
+    max-width: 90%;
+  }
+}
+@media (max-width: 992px) {
+  .logo img {
+    max-width: 70%;
+  }
+}
+@media (max-width: 767px) {
+  .logo img {
+    max-width: 50%;
+  }
+}
+
+.generation {
+  max-height: -webkit-max-content;
+  max-height: -moz-max-content;
+  max-height: max-content;
+  padding: 117px 0;
+  background-color: #f7f7f7;
+}
+@media (max-width: 1600px) {
+  .generation {
+    padding: 80px 0;
+  }
+}
+@media (max-width: 1200px) {
+  .generation {
+    padding: 60px 0;
+  }
+}
+@media (max-width: 992px) {
+  .generation {
+    padding: 40px 0;
+  }
+}
+@media (max-width: 767px) {
+  .generation {
+    padding: 20px 0;
+  }
+}
+.generation__column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+@media (max-width: 1200px) {
+  .generation__icon img {
+    max-width: 90%;
+  }
+}
+@media (max-width: 992px) {
+  .generation__icon img {
+    max-width: 70%;
+  }
+}
+@media (max-width: 767px) {
+  .generation__icon img {
+    max-width: 50%;
+  }
+}
+.generation__title {
+  margin: 34px 0;
+}
+@media (max-width: 992px) {
+  .generation__title {
+    margin: 25px;
+  }
+}
+@media (max-width: 767px) {
+  .generation__title {
+    margin: 15px;
+  }
+}
+.generation__text {
+  font-size: 18px;
+  line-height: 34px;
+  color: #848789;
+}
+@media (max-width: 767px) {
+  .generation__text {
+    font-size: 14px;
+  }
+}
+
+.container-gen {
+  max-width: 1150px;
+  margin: 0 auto;
+  padding: 0 25px;
+}
+
+.title {
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: #353738;
+}
+@media (max-width: 767px) {
+  .title {
+    font-size: 14px;
+  }
+}
+
+.vintage__column {
+  display: flex;
+  flex-direction: column;
+}
+.container-vin {
+  display: flex;
+}
+
+.body-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+  flex: 1 1 auto;
+  border: 1px solid;
+}
+
+.icon {
+  margin: 0px 0px 30px 0px;
+}
+
+.text-column {
+  font-size: 16px;
+  line-height: 29px;
+  color: #848789;
+  text-align: center;
+  margin: 25px 0px 0 0px;
+  padding: 0 0 40px 0;
+  position: relative;
+}
+.text-column::after {
+  content: "";
+  width: 50px;
+  height: 2px;
+  background-color: rgba(0, 6, 8, 0.2);
+  position: absolute;
+  margin: 0px 0px 0px -20px;
+  bottom: 0;
+  left: 50%;
 }
