@@ -465,3 +465,122 @@ body {
 .container-photo {
   display: flex;
 }
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  padding: 5% 0;
+  background-color: #282f35;
+}
+.button-container__button {
+  display: flex;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
+  border: 3px solid rgba(255, 255, 255, 0.3176470588);
+  padding: 20px 50px;
+}
+@media (max-width: 1200px) {
+  .button-container__button {
+    padding: 15px 30px;
+  }
+}
+.button-container__name {
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: rgba(255, 255, 255, 0.6941176471);
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 6% 0;
+}
+.input-container__text {
+  margin: 40px 0;
+  font-size: 24px;
+  line-height: 34px;
+  font-style: italic;
+  color: #848789;
+}
+.input-container__input {
+  display: flex;
+}
+.input-container__textarea-container {
+  display: flex;
+  align-items: center;
+  width: 400px;
+  height: 69px;
+  border: 1px solid #d3d7d9;
+  margin: 0px 15px 0px 0px;
+  padding: 0 0 0 10px;
+}
+.input-container__textarea {
+  font-size: 20px;
+  line-height: 24px;
+  font-style: italic;
+  color: #929292;
+}
+.input-container__submit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 126px;
+  height: 69px;
+  background-color: #64c29e;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 300;
+  color: #ffffff;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  background-color: #f7f7f7;
+  padding: 5% 0;
+}
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  align-items: center;
+}
+.footer__text {
+  display: flex;
+  flex-direction: column;
+  color: #848789;
+  line-height: 17px;
+}
+.footer__text :first-child {
+  font-size: 16px;
+  font-weight: 700;
+}
+.footer__text p {
+  font-size: 13.9px;
+  font-style: italic;
+}
+.footer__link {
+  display: flex;
+}
+.footer__handcraft {
+  display: flex;
+  align-items: center;
+}
+
+.footer-link {
+  margin: 0px 5px;
+}
+
+.handcraft-text {
+  font-size: 13.9px;
+  line-height: 17px;
+  font-weight: 400;
+  font-style: italic;
+  color: #848789;
+  margin: 0px 10px 4px 0px;
+}
