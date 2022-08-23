@@ -398,6 +398,151 @@ body{
 
 }
 
+//
+
+.button-container {
+	display: flex;
+	justify-content: center;
+	padding:5% 0;
+	background-color: #282f35;
+
+	&__button {
+		display: flex;
+		max-width:max-content;
+		border: 3px solid #ffffff51;
+		padding: 20px 50px;
+		@media (max-width:1200px){
+			padding: 15px 30px;
+		}
+		
+	}
+
+	&__name {
+		font-size: 14px;
+		line-height: 1.2;
+		font-weight: 700;
+		text-transform: uppercase;
+		letter-spacing: 0.2em;
+		color: #ffffffb1;
+	}
+}
+
+//
+
+.input-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 6% 0;
+
+	&__logo {
+	}
+
+	&__text {
+		margin: 40px 0;
+		font-size: 24px;
+		line-height: 34px;
+		font-style: italic;
+		color: #848789;
+	}
+
+	&__input {
+		display: flex;
+	}
+
+	&__textarea-container {
+		display: flex;
+		align-items: center;
+		width: 400px;
+		height: 69px;
+		border: 1px solid #d3d7d9;
+		margin: 0px 15px 0px 0px;
+		padding: 0 0 0 10px;
+
+	}
+
+	&__textarea {
+		font-size: 20px;
+		line-height: 24px;
+		font-style: italic;
+		color: #929292;
+	}
+
+	&__submit {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		width: 126px;
+		height: 69px;
+		background-color: #64c29e;
+
+		font-size: 24px;
+		line-height: 24px;
+		font-weight: 300;
+		color: #ffffff;
+	}
+}
+
+//
+
+.footer {
+	display: flex;
+	justify-content: center;
+	background-color: #f7f7f7;
+	padding: 5% 0;
+
+
+	&__container {
+		display:flex;
+		justify-content:space-between;
+		width: 70%;
+		align-items: center;
+
+	}
+
+	&__text {
+		display: flex;
+		flex-direction: column;
+		color: #848789;
+		line-height: 17px;
+		:first-child{
+			font-size: 16px;
+			font-weight: 700;
+		}
+		p{	
+			font-size: 13.9px;
+			font-style: italic;
+		}
+	}
+
+	&__link {
+		display: flex;
+	}
+
+	&__handcraft {
+
+		display: flex;
+		align-items: center;
+	}
+}
+.footer-link {
+	margin: 0px 5px;
+}
+
+.handcraft-text {
+	font-size: 13.9px;
+	line-height: 17px;
+	font-weight: 400;
+	font-style: italic;
+	color: #848789;
+	margin: 0px 10px 4px 0px;
+}
+
+.handcraft-link {
+}
+
+
 
 
 
