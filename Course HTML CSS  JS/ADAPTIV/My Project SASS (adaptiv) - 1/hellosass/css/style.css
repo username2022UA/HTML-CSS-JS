@@ -254,6 +254,7 @@ body {
 }
 .generation__title {
   margin: 34px 0;
+  padding: 0 200px;
 }
 @media (max-width: 992px) {
   .generation__title {
@@ -294,33 +295,38 @@ body {
 
 .vintage__image {
   display: flex;
-  max-width: 66.666%;
+  width: 66.666%;
 }
 .vintage__image img {
   max-width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 @media (max-width: 1200px) {
   .vintage__image img {
-    min-width: 100%;
+    width: 100%;
   }
 }
 @media (max-width: 1200px) {
   .vintage__image {
-    min-width: 100%;
+    width: 100%;
   }
 }
 .vintage__column {
   display: flex;
-  flex: 1 1 auto;
   flex-direction: column;
-  max-width: 33.333%;
+  width: 33.333%;
 }
 .vintage__column img {
-  flex: 1 1 auto;
+  max-width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 @media (max-width: 1200px) {
   .vintage__column {
-    max-width: 50%;
+    width: 50%;
   }
   .vintage__column:last-child {
     display: none;
@@ -328,21 +334,29 @@ body {
 }
 @media (max-width: 767px) {
   .vintage__column {
-    max-width: 100%;
+    width: 100%;
   }
   .vintage__column:last-child {
     display: flex;
   }
 }
+.vintage__title {
+  text-align: center;
+  padding: 0 40px;
+}
 .vintage__image-small {
   display: flex;
+  height: 200px;
 }
 .vintage__image-small img {
-  max-width: 100%;
+  min-width: 100%;
+  min-height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 @media (max-width: 1200px) {
   .vintage__image-small img {
-    min-width: 100%;
+    width: 100%;
   }
 }
 
@@ -449,17 +463,26 @@ body {
   display: flex;
   flex-direction: column;
   max-width: 33.333%;
-  flex: 1 1 auto;
+  flex: 0 1 auto;
 }
 .photo__image {
   display: flex;
-  flex: 1 1 auto;
+  flex: 0 1 auto;
 }
 .photo__image img {
   max-width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .photo__image-2 {
   display: flex;
+}
+.photo__image-2 img {
+  max-width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .container-photo {
