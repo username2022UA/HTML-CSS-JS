@@ -1,0 +1,94 @@
+
+@import "nullstyle.scss";
+
+body{
+	background-color: rgb(200, 195, 195);
+	color: #fff;
+}
+
+.wraper {
+}
+
+.box {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 200px;
+	height: 150px;
+	margin: 50px 0;
+	background-color: rgb(207, 152, 214);
+
+}
+
+.content {
+
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	font-size: 24px;
+	padding: 100px;
+	
+
+		&__translate {
+			max-width: max-content;
+			transition: all 0.8s ease 0s;
+		
+			&:hover{
+				transform: translate(30px, 30px);
+			}
+
+		}
+
+		&__scele {
+			max-width: max-content;
+			transition: all 0.8s ease 0s;
+
+			&:hover{
+				transform: scale(-1, 2);
+			}
+		}
+
+		&__rotate{
+			max-width: max-content;
+			transition: all 0.8s ease 0s;
+
+			&:hover{
+				transform: rotate(360deg);
+			}
+		}
+
+		&__skew{
+			max-width: max-content;
+			transition: all 0.8s ease 0s;
+
+			&:hover{
+				transform: skew(20deg, );
+			}
+		}
+
+		&__matrix{
+			max-width: max-content;
+			transition: all 0.8s ease 0s;
+			transform: matrix(1, 0, 0, 1, 0, 0);
+			
+			&:hover{
+				transform: matrix(1, 0, 0, 2, 20, 20);
+			}
+		}
+
+		&__transform-origin{
+			max-width: max-content;
+			transition: all 2s ease 0s;
+			transform-origin: top left;
+
+			&:hover{
+				transform: rotate(360deg);
+			}
+		}
+
+}
+
+
+
+
+
+
+
