@@ -1,0 +1,28 @@
+
+@import "nullstyle.scss";
+
+body{
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	background-color: rgb(39, 39, 39);
+	font-size: 24px;
+	color: #fff;
+}
+.wrapper {
+	padding: 50px 50px;
+}
+.grid {
+	margin: 50px 0;
+
+		&__body {
+			display: grid;
+
+			grid-template-columns: 200px 150px 300px;
+			grid-template-rows: 200px;
+		}
+
+		&__item {
+			text-align: center;
+			border: 2px dashed rgba(255, 255, 255, 0.2);
+			padding: 30px;
+		}
+}
