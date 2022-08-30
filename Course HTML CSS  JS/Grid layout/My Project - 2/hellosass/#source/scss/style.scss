@@ -1,0 +1,58 @@
+
+@import "nullstyle.scss";
+
+body{
+	background-color: rgb(53, 53, 54);
+}
+.wrapper {
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	font-size: 24px;
+	color: #fff;
+	padding: 50px 50px;
+}
+.content {
+	padding: 30px 3%;
+}
+.grid {
+	font-size: 30px;
+	position: relative;
+	margin: 0px 0px 40px 0px;
+
+		&__body {
+			display: grid;
+			grid-template-rows: [start] 150px [row2] 150px [row-end];
+			grid-template-columns: [start] 1fr [col2] 1fr [col3] 1fr [col-end];
+
+			row-gap: 20px;
+			column-gap: 20px  ;
+
+		}
+
+		&__item {
+			text-align: center;
+			border: 2px dashed rgba(255, 255, 255, 0.2);
+			padding: 30px;
+
+			&_1 {
+				background-color: rgb(241, 173, 84);
+
+			}
+
+			&_2 {
+
+			}
+
+			&_3 {
+
+			}
+
+			&_4 {
+			}
+
+			&_5 {
+			}
+
+			&_6 {
+			}
+		}	
+}	
