@@ -73,19 +73,227 @@ h1, h2, h3, h4, h5, h6 {
 
 /*--------------------*/
 body {
-  background-color: rgb(173, 173, 173);
+  background-color: rgb(80, 67, 45);
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
 
 .wrapper {
-  padding: 100px 100px;
+  padding: 50px 0 0 100px;
 }
 
 .container {
   display: flex;
   justify-content: center;
-  width: 200px;
-  height: 300px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+.container::after {
+  content: "";
+  width: 0px;
+  height: 0px;
+  border-radius: 50%;
+  background: url(../img/v2_600x600.jpg) 0 0/100% 100% no-repeat;
+  position: absolute;
+  top: 217px;
+  left: 198px;
+}
+@-webkit-keyframes drop {
+  0% {
+    width: 0px;
+    height: 0px;
+  }
+  30% {
+    top: 214px;
+    left: 185px;
+    height: 150px;
+    width: 30px;
+  }
+  50% {
+    height: 70px;
+  }
+  65% {
+    top: 470px;
+    height: 50px;
+  }
+  70% {
+    width: 90px;
+    left: 200px;
+  }
+  100% {
+    top: 300px;
+    height: 70px;
+    width: 70px;
+    left: 230px;
+  }
+}
+@keyframes drop {
+  0% {
+    width: 0px;
+    height: 0px;
+  }
+  30% {
+    top: 214px;
+    left: 185px;
+    height: 150px;
+    width: 30px;
+  }
+  50% {
+    height: 70px;
+  }
+  65% {
+    top: 470px;
+    height: 50px;
+  }
+  70% {
+    width: 90px;
+    left: 200px;
+  }
+  100% {
+    top: 300px;
+    height: 70px;
+    width: 70px;
+    left: 230px;
+  }
+}
+@-webkit-keyframes coup-img {
+  0% {
+    top: 300px;
+    height: 70px;
+    width: 70px;
+    left: 230px;
+    transform: rotate(0deg);
+  }
+  20% {
+    height: 70px;
+    width: 70px;
+  }
+  33% {
+    top: 460px;
+    height: 60px;
+    width: 90px;
+    left: 250px;
+  }
+  67% {
+    top: 350px;
+    height: 70px;
+    width: 70px;
+    left: 280px;
+  }
+  90% {
+    top: 460px;
+    height: 60px;
+    width: 80px;
+  }
+  100% {
+    top: 450px;
+    height: 70px;
+    width: 70px;
+    left: 300px;
+  }
+}
+@keyframes coup-img {
+  0% {
+    top: 300px;
+    height: 70px;
+    width: 70px;
+    left: 230px;
+    transform: rotate(0deg);
+  }
+  20% {
+    height: 70px;
+    width: 70px;
+  }
+  33% {
+    top: 460px;
+    height: 60px;
+    width: 90px;
+    left: 250px;
+  }
+  67% {
+    top: 350px;
+    height: 70px;
+    width: 70px;
+    left: 280px;
+  }
+  90% {
+    top: 460px;
+    height: 60px;
+    width: 80px;
+  }
+  100% {
+    top: 450px;
+    height: 70px;
+    width: 70px;
+    left: 300px;
+  }
+}
+@-webkit-keyframes rotation-img {
+  0% {
+    top: 450px;
+    height: 70px;
+    width: 70px;
+    left: 300px;
+    transform: rotate(0deg);
+  }
+  50% {
+    top: 450px;
+    height: 70px;
+    width: 70px;
+    left: 540px;
+    transform: rotate(360deg) scale(1, 1);
+    border-radius: 50%;
+  }
+  100% {
+    top: 700px;
+    height: 70px;
+    width: 70px;
+    left: 540px;
+    transform: rotate(360deg) scale(2, 2);
+    border-radius: 0;
+  }
+}
+@keyframes rotation-img {
+  0% {
+    top: 450px;
+    height: 70px;
+    width: 70px;
+    left: 300px;
+    transform: rotate(0deg);
+  }
+  50% {
+    top: 450px;
+    height: 70px;
+    width: 70px;
+    left: 540px;
+    transform: rotate(360deg) scale(1, 1);
+    border-radius: 50%;
+  }
+  100% {
+    top: 700px;
+    height: 70px;
+    width: 70px;
+    left: 540px;
+    transform: rotate(360deg) scale(2, 2);
+    border-radius: 0;
+  }
+}
+.container:hover::after {
+  -webkit-animation-name: drop, coup-img, rotation-img;
+          animation-name: drop, coup-img, rotation-img;
+  -webkit-animation-duration: 4s, 3s, 6s;
+          animation-duration: 4s, 3s, 6s;
+  -webkit-animation-delay: 3.75s, 7.75s, 11s;
+          animation-delay: 3.75s, 7.75s, 11s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-timing-function: ease-out, ease-in-out, ease;
+          animation-timing-function: ease-out, ease-in-out, ease;
 }
 
 .tablet {
@@ -216,14 +424,14 @@ body {
 }
 
 .pyramid {
+  display: flex;
   width: 50px;
   height: 80px;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   border: 2px solid #fff;
-  margin: 0px 0px 0px 0px;
   background-color: rgba(0, 204, 255, 0.168);
-  transform-origin: center right;
+  transform-origin: top right;
 }
 @-webkit-keyframes watter {
   0% {
@@ -297,4 +505,11 @@ body {
     border-bottom: 60px solid rgb(158, 124, 155);
     transform: translate(0px, 65px);
   }
+}
+
+.surface {
+  width: 450px;
+  height: 10px;
+  background-color: rgb(63, 63, 63);
+  margin: 270px 0px 0px 0px;
 }
