@@ -73,7 +73,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /*--------------------*/
 body {
-  background-color: rgb(80, 67, 45);
+  background-color: rgb(197, 193, 186);
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
 
@@ -364,8 +364,8 @@ body {
 .left {
   background-color: red;
   color: #fff;
-  border-top-left-radius: 50%;
-  border-bottom-left-radius: 50%;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
   transform-origin: top right;
   transition: all 1s ease 0s;
 }
@@ -395,8 +395,8 @@ body {
 .right {
   background-color: #fff;
   color: #000;
-  border-top-right-radius: 50%;
-  border-bottom-right-radius: 50%;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
   transform-origin: top left;
   transition: all 1s ease 0s;
 }
