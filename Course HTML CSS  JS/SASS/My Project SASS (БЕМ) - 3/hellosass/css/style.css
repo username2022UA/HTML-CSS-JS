@@ -82,7 +82,7 @@ body {
   height: 1080px;
   margin: 0 auto;
   padding: 165px 0 0px 0;
-  background: url("/img/bg_header_743.png");
+  background: url("../img/bg_header_743.png");
   color: #ffffff;
 }
 .start__logotip {
@@ -133,7 +133,7 @@ body {
 }
 .start .page::after {
   content: "";
-  background: url("/img/icons/arrow_down_30.png");
+  background: url("../img/icons/arrow_down_30.png");
   width: 17px;
   height: 10px;
   position: absolute;
@@ -299,7 +299,7 @@ body {
   width: 1920px;
   height: 400px;
   margin: 0 auto;
-  background: url("/img/bg_header_copy_884.png") bottom;
+  background: url("../img/bg_header_copy_884.png") bottom;
 }
 .partners__our {
   max-width: -webkit-max-content;
