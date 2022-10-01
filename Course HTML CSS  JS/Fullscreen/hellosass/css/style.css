@@ -107,6 +107,9 @@ html, body {
   padding: 0 30px;
   border-radius: 25px;
 }
+.fullscreen__bg {
+  background: url(../img/01.jpg) center/cover no-repeat fixed;
+}
 .fullscreen__content2 {
   background-color: rgb(48, 43, 43);
   padding: 50px 150px;

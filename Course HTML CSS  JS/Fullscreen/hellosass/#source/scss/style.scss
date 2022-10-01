@@ -71,6 +71,10 @@ html, body{
 			border-radius: 25px;
 		}
 
+		&__bg {
+			background: url(../img/01.jpg) center / cover no-repeat fixed;
+		}
+
 		&__content2 {
 			background-color: rgb(48, 43, 43);
 			padding: 50px 150px;
