@@ -1,0 +1,74 @@
+
+@import "nullstyle.scss";
+
+
+.wrapper {
+	height: 100%;
+	padding: 50px;
+	background-color:darkgray;
+}
+
+.link {
+	margin: 0px 0px 20px 0px;
+}
+
+*{
+	font-size: 24px;
+}
+
+[href] {
+	display: block;
+}
+
+#google {
+	color: yellow;
+}
+
+[title]::before {
+	content: "(?)";
+	color: #fff;
+	display: inline-block;
+	margin-right: 5px;
+}
+
+[title="title"] {
+	text-decoration: underline;
+}
+
+[href="https://www.youtube.com"] {
+	text-decoration: overline;
+}
+
+[title~="подсказка"] {
+	color: red;
+}
+
+[title|="подсказка"] {
+	color: blueviolet;
+}
+
+.namber {}
+
+.list {
+
+	&__item {}
+}
+
+[class^="list"] {
+	margin: 0px 0px 10px 0px;
+	color:#fff;
+	border: 1px solid #fff;
+}
+
+[class$="list"] {
+	border: 1px solid green;
+	padding: 10px;
+}
+
+[class*="item-y"] {
+	color: yellow;
+}
+
+[class*="__container"] {
+	padding: 0px 50px;
+}
