@@ -122,7 +122,6 @@ while (num <= 5) {
 }
 */
 
-/*
 let num = 1;
 while (num) {
 	console.log(num);
@@ -131,7 +130,6 @@ while (num) {
 		break;
 	}
 }
-*/
 
 /*
 let num = 1;
