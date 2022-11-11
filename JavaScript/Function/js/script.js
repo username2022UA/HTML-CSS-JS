@@ -1,174 +1,224 @@
-/*console.log('35' + - "22");
-
-console.log("35" * "22");
-
-//console.log("558" > 22++);
-*/
-
 /*
-let userCounter = 0;
-let newUser = userCounter++;
-console.log(newUser);
-*/
-
-/*
-console.log(!false && 11 || 18 && !'');
-*/
-
-/*
-let name = 0;
-console.log(name ?? "без имени"); 
-
-let message = "Hello";*/
-/*if (5 < 10) {
-	messageEnd = ", Вася!";
+function showHello() {
+	console.log("Hello!");
 }
-else {
-	messageEnd = ", Вика!"
-}
-message += messageEnd;
-console.log(message);*/
+showHello();
+*/
 
-/*let messageEnd = 5 > 10 ? ", Вася!" : ", Вика!";
-message += messageEnd;
+//вложенность и видимость функций
+/*
+function getSumm() {
+	let numOne, numTwo;
+	function getNumOne() {
+		numOne = 1;
+	}
+	function getNumTwo() {
+		numTwo = 2;
+	}
+	getNumOne();
+	getNumTwo();
+	let numSumm = numOne + numTwo;
+	console.log(numSumm);
+}
+getSumm();
+*/
+
+//локальные и внешние переменные
+/*
+function showMessage() {
+	//локальная переменная
+	let message = "Hello!"
+	console.log(message);
+}
 console.log(message);
-
-if (1 === "1") {
-	console.log("1");}
-else { console.log("0");}
-
-if (5 == "5") {
-	console.log("1");}
-else {
-	console.log("0");
-}
-
-let message1 = (92 > '11' && 58 < 100) ? "1" : "0";
-console.log(message1);
-
-if (0) {
-	console.log("0");
-}
-else if (" "){
-	console.log("1");
-}
 */
 
+//внешняя переменная
 /*
-let num = 0;
-while (num < 5) {
-	console.log(num);
-	num++;
+let message;
+function showMessage() {
+	//используется внешняя переменная
+	message = "Hello!"
 }
+showMessage();
+console.log(message);
 */
 
+//глобальные переменные
 /*
-let nam = 6;
-while (nam) {
-	console.log(nam);
-	nam--;
+let globalWar = "im global"
+function getSumm() {
+	let numOne, numTwo;
+	function getNumOne() {
+		numOne = 1;
+		console.log(globalWar);
+	}
+	function getNumTwo() {
+		numTwo = 2;
+	}
+	getNumOne();
+	getNumTwo();
+	let numSumm = numOne = numTwo;
+	console.log(globalWar);
 }
+console.log(globalWar);
+getSumm();
 */
 
+//параметры (аргументы)
 /*
-let a = 5;
-while (a) console.log(a--);
-*/
-
-/*
-let nam = 0;
-do {
-	console.log(nam);
-	nam++;
+function calcSumm(numOne, numTwo) {
+	console.log(`переменная nunOne: ${numOne}`);
+	console.log(`переменная nunTwo: ${numTwo}`);
+	let numSumm = numOne + numTwo;
+	console.log(`Сумма: ${numSumm}`);
 }
-while (nam < 0);
+calcSumm(1, 2);
 */
 
+//функции-колбеки
 /*
-let num = 0;
-for (; num < 5; num++) {
-	//  console.log(num);
-	if (num == 2) break;
-}
-console.log(`finish, num = ${num}`);
-*/
-
-/*
-let num = 0;
-for (; num < 5; num++) {
-	if (num == 2) continue;
-	console.log(num);
-}
-*/
-
-/*
-for (let num = 0; num <= 5; num++) {
-	if (num == 0) continue;
-	console.log(num);
-}
-*/
-
-/*
-for (let num = 1; num <= 5; num++) {
-	console.log(num);
-}
-*/
-
-/*
-let num = 1;
-while (num <= 5) {
-	console.log(num);
-	num++;
-}
-*/
-
-let num = 1;
-while (num) {
-	console.log(num);
-	num++;
-	if (num > 5) {
-		break;
+function calcSumm(numOne, numTwo, more, less) {
+	let numSumm = numOne + numTwo;
+	if (numSumm > 3) {
+		more();
+	}
+	else {
+		less();
 	}
 }
-
-/*
-let num = 1;
-do {
-	console.log(num);
-	num++;
+function showMoreMessage() {
+	console.log('Больше чем 3');
 }
-while (num <= 5);
+function showLessMessage() {
+	console.log('Меньше чем 3');
+}
+calcSumm(1, 1, showMoreMessage, showLessMessage);
+*/
+
+//возврат результата
+/*
+function calcSumm(numOne, numTwo) {
+	let numSumm = numOne + numTwo;
+	return numSumm;
+}
+let funcRezult = calcSumm(1, 2);
+console.log(`Сумма: ${funcRezult}`);
 */
 
 /*
-let num = 8;
-while (num) {
-	console.log(num);
-	num--;
+function calcSumm(numOne, numTwo) {
+	let rezult = 1;
+	for (let i = 0; i < numTwo; i++) {
+		rezult *= numOne;
+	}
+	return rezult;
 }
+console.log(calcSumm(2, 3));
 */
 
+//Рекурсия
 /*
-for (let num = 0; num < 3; num++) {
-	console.log(`number: ${num}`);
-}
-*/
-
-/*
-let num = 0;
-while (num < 3) {
-	console.log(`number: ${num}`);
-	num++;
-}
-*/
-
-/*
-firstFor: for (let num = 0; num < 2; num++) {
-	for (let size = 0; size < 3; size++) {
-		if (size == 1) {
-			break firstFor;
-		}
-		console.log(size);
+function calcSumm(numOne, numTwo) {
+	if (numTwo === 1) {
+		return numOne;
+	}
+	else {
+		return numOne * calcSumm(numOne, numTwo -1);
 	}
 }
+console.log(calcSumm(2, 3));
 */
+
+//Функциональное выражение
+/*
+let showMessage = function() {
+	console.log("Hello!");
+};
+showMessage();
+*/
+
+/*
+let getSumm;
+if (2 > 1) {
+	getSumm = function() {
+		let summ = 1 + 2;
+		console.log(summ);
+	};
+}
+getSumm();
+*/
+
+//Однострочная стрелочная функция
+/*
+let getMessage = (text, name) => text + ", " + name + "!";
+console.log(getMessage("Hello", 'Rob'));
+*/
+
+//Многострочная стрелочная функция
+/*
+let getMessage = (text, name) => {
+	let message = text + ", " + name + "!";
+	return message;
+};
+console.log(getMessage("Hello", "Rob"));
+*/
+
+//планирование вызова функции
+/*
+function showMessage(text, name) {
+	console.log(`${text}, ${name}!`);
+}
+setTimeout(showMessage, 2000, "Hello", "Rob");
+*/
+
+/*
+function showMessage(text, name) {
+	console.log(`${text}, ${name}!`);
+}
+setInterval(showMessage, 2000, "Hello", "Rob");
+*/
+
+//clearTimeout
+/*
+function showNumber(num) {
+	console.log(num);
+	let timeId = setTimeout(showNumber, 1000, ++num);
+	if (num === 6) {
+		clearTimeout(timeId);
+	}
+}
+setTimeout(showNumber, 1000, 1);
+*/
+
+/*
+let result = 0;
+function showNumber(num) {
+	result += num;
+	console.log(result);
+	if (result === 5) {
+		clearInterval(timeId);
+	}
+}
+let timeId = setInterval(showNumber, 1000, 1);
+*/
+/*
+function showName() {
+	console.log("Rob!");
+}
+setTimeout(showName, 0);
+console.log("Anna!");
+*/
+
+/*
+'use strict'
+let showMessage;
+if (2 > 1) {
+	showMessage = function() {
+		console.log("Hello");
+	}
+}
+showMessage();
+*/
+
+
