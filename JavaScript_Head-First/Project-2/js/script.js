@@ -22,7 +22,14 @@ var dog = {
 	weight: 35
 };
 if (dog.weight > 30) {
-	alert("WOOF WOOF");
+	//alert("WOOF WOOF");
 } else {
-	alert("woof woof");
+	//alert("woof woof");
 }
+
+//
+
+var circleRadius = 20;
+var circleArea = Math.PI * (circleRadius * circleRadius);
+console.log(circleArea);
+console.log(Math.PI);
