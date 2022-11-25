@@ -1,0 +1,19 @@
+
+@import "nullstyle.scss";
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
+
+body {
+	background-color: #666;
+}
+.text {
+	font-family: 'Rubik Mono One', sans-serif;
+	font-size: 60px;
+	text-align: center;
+	letter-spacing: 5px;
+	margin: 100px 0px 0px 0px;
+	color: #fff;
+	text-shadow: 10px 10px 30px rgb(67, 35, 181), -10px -10px 30px rgb(153, 45, 200);
+	-webkit-text-stroke: 2px rgb(194, 140, 202);
+	-webkit-text-fill-color: transparent;
+}
