@@ -38,3 +38,6 @@ console.log(result);
 var sum = 1000 + "108";
 console.log(sum);
 console.log(typeof sum);
+
+//==================================
+

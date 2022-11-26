@@ -1,4 +1,5 @@
-var location1 = 3, location2 = 4, location3 = 5;
+var randomLoc = Math.floor(Math.random() * 5);
+var location1 = randomLoc, location2 = randomLoc + 1, location3 = location2 + 1;
 var guess;
 var hits = 0;
 var guesses = 0;
@@ -22,5 +23,4 @@ while (isSunk == false) {
 		}
 	}
 }
-document.write("Корабль потоплен! ");
-document.write("Колличество выстрелов " + guesses + ".");
+alert("Корабль потоплен! Колличество выстрелов " + guesses + ".");
