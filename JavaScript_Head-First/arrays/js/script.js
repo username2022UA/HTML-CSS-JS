@@ -2,7 +2,7 @@ var products = ["Choo Choo Chocolate", "Icy Mint", "Cake Batter", "Bubblegum"];
 var last = products.length - 1;
 console.log(products[last]);
 
-console.log("  "); // Пробелы====================================
+console.log("  "); // Отступ ====================================
 
 function makePhrases() {
 	var words1 = ["24/7", "multi-tier", "30,000 foot", "B-to-B", "win-win"];
@@ -16,7 +16,7 @@ function makePhrases() {
 }
 makePhrases();
 
-console.log("  "); // Пробелы====================================
+console.log("  "); // Отступ ====================================
 /*
 var scores = [60, 50, 60, 58, 54, 54, 58, 50, 52, 54, 48, 69,
 	34, 55, 51, 52, 44, 51, 69, 64, 66, 55, 52, 61,
@@ -43,7 +43,7 @@ console.log("Highest bubble score: " + namberMax);
 console.log("Solutions with highest score: " + scoresMax);
 */
 
-console.log("  "); // Пробелы====================================
+console.log("  "); // Отступ ====================================
 
 var products = ["Choo Choo Chocolate", "Icy Mint", "Cake Batter", "Bubblegum"];
 var hasBubbleGum = [false, false, false, true];
@@ -61,7 +61,7 @@ for (var i = 0; i < hasBubbleGum.length; i++) {
 	}
 }
 
-console.log("  "); // Пробелы====================================
+console.log("  "); // Отступ ====================================
 /*
 var i = 0;
 while (i < products.length) {
@@ -70,14 +70,14 @@ while (i < products.length) {
 	i++;
 }
 */
-console.log("  "); // Пробелы====================================
+console.log("  "); // Отступ  ====================================
 
 for (var i = 0; i < products.length; i++) {
 	gum = "Bubble solution #" + i + " score: " + products[i];
 	console.log(gum);
 }
 
-console.log(" "); // Пробелы====================================
+console.log(" "); // Отступ ====================================
 /*
 var scores = [60, 50, 60, 58, 54, 54, 58, 50, 52, 54, 48, 69,
 	34, 55, 51, 52, 44, 51, 69, 64, 66, 55, 52, 61,
@@ -100,36 +100,35 @@ console.log("Bubbles tests: " + scores.length);
 console.log("Highest bubble score: " + namberMax);
 console.log("Solutions with highest score: " + scoresMax);
 */
-console.log(" "); // Разрыв ====================================
+console.log(" "); // Отступ ====================================
 
-var scores = [60, 50, 60, 58, 54, 54, 58, 50, 52, 54, 48, 69,
+var scores = [69, 50, 60, 58, 54, 54, 58, 50, 52, 54, 48, 69,
 	34, 55, 51, 52, 44, 51, 69, 64, 66, 55, 52, 61,
 	46, 31, 57, 52, 44, 18, 41, 53, 55, 65, 51, 49];
-
-function printNamber (array) {
+function printNamber(array) {
+	var namberMax = 0;
 	for (var i = 0; i < array.length; i++) {
 		var output = "Bubble solution #" + i + " score: " + array[i];
 		console.log(output);
-	}
-}
-function maxNamber (array) {
-	var scoresMax = [];
-	var namberMax = 0;
-	for (var i = 0; i < array.length; i++) {
 		if (array[i] > namberMax) {
 			namberMax = array[i];
 		}
 	}
+	return namberMax;
+}
+function maxNambersArray(array, namberMax) {
+	var scoresMax = [];
 	for (var i = 0; i < array.length; i++) {
 		if (array[i] == namberMax) {
 			scoresMax.push(i);
 		}
 	}
-	console.log("Bubbles tests: " + array.length);
-	console.log("Highest bubble score: " + namberMax);
-	console.log("Solutions with highest score: " + scoresMax);
+	return scoresMax;
 }
+var maxNamber = printNamber(scores);
+console.log("Bubbles tests: " + scores.length);
+console.log("Highest bubble score: " + maxNamber);
+var maxNambers = maxNambersArray(scores, maxNamber);
+console.log("Solutions with the highest score: " + maxNambers);
 
-printNamber(scores);
-console.log(" ");
-maxNamber(scores);
+console.log(" "); // Отступ ====================================
