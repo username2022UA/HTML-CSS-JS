@@ -104,7 +104,7 @@ console.log(" "); // Отступ ====================================
 
 var scores = [69, 50, 60, 58, 54, 54, 58, 50, 52, 54, 48, 69,
 	34, 55, 51, 52, 44, 51, 69, 64, 66, 55, 52, 61,
-	46, 31, 57, 52, 44, 18, 41, 53, 55, 65, 51, 49];
+	46, 31, 57, 52, 44, 18, 41, 53, 55, 65, 51, 69];
 function printNamber(array) {
 	var namberMax = 0;
 	for (var i = 0; i < array.length; i++) {
@@ -130,5 +130,52 @@ console.log("Bubbles tests: " + scores.length);
 console.log("Highest bubble score: " + maxNamber);
 var maxNambers = maxNambersArray(scores, maxNamber);
 console.log("Solutions with the highest score: " + maxNambers);
+
+console.log(" "); // Отступ ====================================
+/*
+var costs = [.18, .27, .25, .25, .25, .25,
+	.33, .31, .25, .29, .27, .12,
+	.31, .25, .16, .13, .21, .25,
+	.15, .25, .28, .25, .24, .22,
+	.20, .25, .30, .25, .24, .25,
+	.25, .25, .27, .25, .26, .20];
+function costMin(arrayCosts, arrayMaxNambers) {
+	var positionMinCost = [arrayMaxNambers[0]];
+	for (var i = 0; i < arrayMaxNambers.length; i++) {
+		if (arrayCosts[arrayMaxNambers[i]] < arrayCosts[positionMinCost]) {
+			positionMinCost = arrayMaxNambers[i];
+		} else if (arrayCosts[arrayMaxNambers[i]] == arrayCosts[positionMinCost]) {
+			positionMinCost.push(arrayMaxNambers[i]);
+		}
+	}
+	return positionMinCost;
+}
+var costMin = costMin(costs, maxNambers);
+console.log("Bubble Solution #: " + costMin + " is the most cost effective" );
+*/
+
+var costs = [.16, .27, .25, .25, .25, .25,
+	.33, .31, .25, .29, .27, .11,
+	.31, .25, .16, .13, .21, .25,
+	.17, .25, .28, .25, .24, .22,
+	.20, .25, .30, .25, .24, .25,
+	.25, .25, .27, .25, .26, .11];
+function costMin(arrayCosts, arrayMaxNambers) {
+	var minCost = costs[arrayMaxNambers[0]];
+	var arrayPositionMinCost = [];
+	for (var i = 0; i < arrayMaxNambers.length; i++) {
+		if (arrayCosts[arrayMaxNambers[i]] < minCost) {
+			minCost = arrayCosts[arrayMaxNambers[i]];
+		}
+	}
+	for (var i = 0; i < arrayMaxNambers.length; i++) {
+		if (arrayCosts[arrayMaxNambers[i]] == minCost) {
+			arrayPositionMinCost.push(arrayMaxNambers[i]);
+		}
+	}
+	return arrayPositionMinCost;
+}
+var costMin = costMin(costs, maxNambers);
+console.log("Bubble Solution #: " + costMin + " is the most cost effective");
 
 console.log(" "); // Отступ ====================================
