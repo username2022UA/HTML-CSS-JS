@@ -1,3 +1,11 @@
+
+let use = ["Ваня", "Иштван", "Оля"];
+console.log(use);
+let useCopy = use;
+useCopy.length = 3;
+console.log(useCopy);
+console.log(use);
+
 // Удаление елемента начиная с первой поззиции
 let arrOne = ["Ваня", "Иштван", "Оля"];
 arrOne.splice(1, 1);
@@ -181,16 +189,77 @@ console.log(arrLong.length);
 let users = ["Ваня", "Иштван"];
 users.push("Оля");
 console.log(users);
-users[1] = "Петя";
+if (users.includes("Иштван", 0)) {
+	let userIndex = users.indexOf("Иштван", 0);
+	users[userIndex] = "Петя";
+}
 console.log(users);
 let deleteUsers = users.shift();
+console.log(users);
 console.log(deleteUsers);
 users.unshift("Маша", "Паша");
 console.log(users);
 
 // Задача №3.
-let users1 = ["Ваня", "Иштван", "Оля"];
-let usersNew = users1.splice(1, 1);
-let userOne = users1.indexOf("Иштван", 0);
-console.log(users1);
-console.log(usersNew);
+
+let usersOne = ["Ваня", "Иштван", "Оля"];
+console.log(usersOne);
+let userDelete;
+if (usersOne.includes("Иштван", 0)) {
+	userIndDel = usersOne.indexOf("Иштван", 0);
+	userDelete = usersOne.splice(userIndDel, 1);
+}
+
+
+let userDelete1;
+for (let i = 0; i < usersOne.length; i++) {
+	if (usersOne[i] == "Иштван") {
+		userDelete1 = usersOne.splice(i, 1);
+	}
+}
+console.log(usersOne);
+console.log(userDelete);
+
+// Задача №4.
+let strin = "Ваня,Иштван,Оля";
+console.log(strin);
+let strinArr;
+if (Array.isArray(strin) != true) {
+	strinArr = strin.split(",");
+}
+console.log(strinArr);
+
+// Задача №5.
+let arrPrev = [9, 2, 8];
+let reduceValue3 = arrPrev.reduce(function(previousValue, item, index, array) {
+	console.log(previousValue);
+});
+
+//============================================
+
+let arrNambers = [-1, 2, 3, 7, 10];
+
+function arrNamberSumm(arr, namber) {
+	for (let i = 0; i < arr.length; i++) {
+		for (let n = 0 + i; n < arr.length; n++) {
+			if ((arr[i] + arr[n] == namber) && (i != n)) {
+				let arrSumm = new Array(arr[i], arr[n]);
+				console.log(arrSumm);
+				return;
+			}
+		}
+	}
+}
+arrNamberSumm(arrNambers, 9);
+
+function arrNamberSumm2(arr, namber) {
+	for (let i = 0; i < arr.length; i++) {
+		let x = namber - arr[i];
+		if (arr.includes(x, i + 1)) {
+			let arrSumm = new Array(arr[i], arr[arr.indexOf(x, i + 1)]);
+			console.log(arrSumm);
+			return;
+		}
+	}
+}
+arrNamberSumm2(arrNambers, 9);
