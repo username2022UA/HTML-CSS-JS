@@ -328,9 +328,9 @@ function arrNamberSumm4(arr, namber) {
 arrNamberSumm4(arrNambers2, 11);
 
 //==============================================================
-
+/*
 let arrNambers3 = [2, 3, 7, 8, 9, 17, 22, 25, 29];
-function arrNamberSumm5(arr, namber) {
+function arrNamberSumm5(arr, namber) { // O(n)
 	if (arr && namber) {
 		while (arr.length > 1) {
 			let borderL = arr[0];
@@ -351,3 +351,29 @@ function arrNamberSumm5(arr, namber) {
 	}
 }
 arrNamberSumm5(arrNambers3, 30);
+*/
+//================================================
+
+let arrNambers4 = [2, 3, 7, 8, 9, 17, 22, 25, 29];
+function arrNamberSumm6(arr, namber) { // O(n)
+	if (arr && namber) {
+		let l = 0;
+		let r = arr.length - 1;
+		while (l < r) {
+			let sum = arr[l] + arr[r];
+			if (sum == namber) {
+				let arrTwoNamber = new Array(arr[l], arr[r]);
+				console.log("Два числа: " + arrTwoNamber);
+				return;
+			} else if (sum < namber) {
+				l++;
+			} else if (sum > namber) {
+				r--;
+			}
+		}
+		console.log("Нет такой пары чисел!");
+	} else {
+		console.log("Недостаточно аргументов!");
+	}
+}
+arrNamberSumm6(arrNambers4, 26);
