@@ -237,7 +237,7 @@ let reduceValue3 = arrPrev.reduce(function (previousValue, item, index, array) {
 
 //============================================
 
-let arrNambers = [-1, 2, 3, 7, 10];
+let arrNambers = [2, 3, 7, 8, 9, 17, 22, 25, 29];
 
 function arrNamberSumm(arr, namber) { // O(n²)
 	if (arr && namber) {
@@ -254,7 +254,7 @@ function arrNamberSumm(arr, namber) { // O(n²)
 		console.log("Недостаточно аргументов!");
 	}
 }
-arrNamberSumm(arrNambers, 9);
+arrNamberSumm(arrNambers, 47);
 
 //==============================================================
 
@@ -274,7 +274,7 @@ function arrNamberSumm2(arr, namber) { // O(n²)?
 		console.log("Недостаточно аргументов!");
 	}
 }
-arrNamberSumm2(arrNambers, 9);
+arrNamberSumm2(arrNambers, 26);
 
 //==============================================================
 
@@ -296,7 +296,7 @@ function arrNamberSumm3(arr, namber) { // O(n)
 		console.log("Недостаточно аргументов!");
 	}
 }
-arrNamberSumm3(arrNambers, 9)
+arrNamberSumm3(arrNambers, 31)
 
 //==============================================================
 
