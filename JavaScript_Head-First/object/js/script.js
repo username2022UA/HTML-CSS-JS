@@ -1,7 +1,7 @@
 var cadi = {
 	make: "Cadillac",
 	model: "GM",
-	year: 1955, 
+	year: 1955,
 	color: "tan",
 	mileage: 12892,
 	passengers: 5,
@@ -133,7 +133,7 @@ var fiat = {
 	passengers: 2,
 	convertible: false,
 	mileage: 88000,
-	drive: function() {
+	drive: function () {
 		console.log("Zoom zoom!");
 	}
 };
@@ -147,18 +147,208 @@ var fiat = {
 	passengers: 2,
 	convertible: false,
 	mileage: 88000,
-	started: true,
+	started: false,
 	start: function () {
-		started = true;
+		this.started = true;
 	},
 	stop: function () {
-		started = false;
+		this.started = false;
 	},
 	drive: function () {
-		if (started) {
+		if (this.started) {
 			alert("Zoom zoom!");
 		} else {
 			alert("You need to start the engine first.");
 		}
 	}
 };
+//fiat.drive();
+//fiat.start();
+//fiat.drive();
+//fiat.stop();
+
+//====================================
+
+var song = {
+	name: "Walk This Way",
+	artist: "Run-D.M.C.",
+	minutes: 4,
+	seconds: 3,
+	genre: "80s",
+	playing: false,
+	play: function () {
+		if (this.playing) {
+			console.log("Playing " + this.name + " by " + this.artist);
+		} else {
+			this.playing = true;
+			console.log("Playing " + this.name + " by " + this.artist);
+		}
+	},
+	pause: function () {
+		if (this.playing) {
+			this.playing = false;
+		}
+	}
+};
+song.play();
+song.pause();
+console.log(song.playing);
+
+//==========================================
+
+var eightBall = {
+	index: 0,
+	advice: ["yes", "no", "maybe", "not a chance"],
+	shake: function () {
+		this.index = this.index + 1;
+		if (this.index >= this.advice.length) {
+			this.index = 0;
+		}
+	},
+	look: function () {
+		return this.advice[this.index];
+	}
+};
+eightBall.shake();
+console.log(eightBall.look());
+
+eightBall.shake();
+console.log(eightBall.look());
+
+eightBall.shake();
+console.log(eightBall.look());
+
+//================================================
+
+var cadi = {
+	make: "GM",
+	model: "Cadillac",
+	year: 1955,
+	color: "tan",
+	passengers: 5,
+	convertible: false,
+	mileage: 12892,
+	started: false,
+	start: function () {
+		this.started = true;
+	},
+	stop: function () {
+		this.started = false;
+	},
+	drive: function () {
+		if (this.started) {
+			alert(this.make + " " + this.model + " goes zoom zoom!");
+		} else {
+			alert("You need to start the engine first.");
+		}
+	}
+};
+var chevy = {
+	make: "Chevy",
+	model: "Bel Air",
+	year: 1957,
+	color: "red",
+	passengers: 2,
+	convertible: false,
+	mileage: 1021,
+	started: false,
+	start: function () {
+		this.started = true;
+	},
+	stop: function () {
+		this.started = false;
+	},
+	drive: function () {
+		if (this.started) {
+			alert(this.make + " " + this.model + " goes zoom zoom!");
+		} else {
+			alert("You need to start the engine first.");
+		}
+	}
+};
+var taxi = {
+	make: "Webville Motors",
+	model: "Taxi",
+	year: 1955,
+	color: "yellow",
+	passengers: 4,
+	convertible: false,
+	mileage: 281341,
+	started: false,
+	start: function () {
+		this.started = true;
+	},
+	stop: function () {
+		this.started = false;
+	},
+	drive: function () {
+		if (this.started) {
+			alert(this.make + " " + this.model + " goes zoom zoom!");
+		} else {
+			alert("You need to start the engine first.");
+		}
+	}
+};
+//cadi.start();
+//cadi.drive();
+//cadi.stop();
+//chevy.start();
+//chevy.drive();
+//chevy.stop();
+//taxi.start();
+//taxi.drive();
+//taxi.stop();
+
+//==============================
+
+var fiat = {
+	make: "Fiat",
+	model: "500",
+	started: false,
+	fuel: 0,
+	start: function () {
+		if (this.fuel > 0) {
+			this.started = true;
+			this.fuel = this.fuel - 1;
+			alert("Start engene!");
+		} else {
+			alert("The car is on empty, fill up before starting!");
+		};
+	},
+	stop: function () {
+		this.started = false;
+	},
+	drive: function () {
+		if (this.started) {
+			if (this.fuel > 0) {
+				this.fuel = this.fuel - 1;
+				alert(this.make + " " + this.model + " goes zoom zoom! Fuel " + this.fuel + " liter!");
+			} else {
+				this.stop();
+				alert("Uh oh, out of fuel.");
+			};
+		} else {
+			alert("You need to start the engine first.");
+		};
+	},
+	addFuel: function (amount) {
+		this.fuel = this.fuel + amount;
+		alert("Fuel filled " + amount + " liter");
+	}
+};
+fiat.start();
+fiat.drive();
+fiat.addFuel(2);
+fiat.start();
+fiat.drive();
+fiat.drive();
+fiat.drive();
+fiat.stop();
+
+//==================================
+
+var access =
+	document.getElementById("code9");
+var code = access.innerHTML;
+code = code + " midnight";
+alert(code);
