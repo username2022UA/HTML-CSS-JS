@@ -7,3 +7,14 @@
 	song3.innerHTML = "I Code the Line, by Johnny JavaScript";
 }
 window.onload = addSongs;*/
+var colorRed = document.getElementById("song1");
+colorRed.setAttribute("class", "redText");
+
+var scoop = document.getElementById("song1");
+var altText = scoop.getAttribute("class");
+if (altText == null) {
+	console.log("Oh, I guess there isn't an alt attribute.");
+} else {
+	console.log("I can't see the image in the console,");
+	console.log(" but I'm told it looks like " + altText);
+}
