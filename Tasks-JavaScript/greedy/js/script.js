@@ -37,3 +37,4 @@ function greedy(change) {
 Всего: ${coinSumm} монет`);
 }
 greedy(0.55);
+//console.log(String.fromCharCode(65));
