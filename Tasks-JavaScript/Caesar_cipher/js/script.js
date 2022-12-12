@@ -1,10 +1,9 @@
-let text = "hello";
+let text = "Hello";
 function caesar(text, key) {
 	let newText = [];
 	for (let i = 0; i < text.length; i++) {
-		newText[i] = text[i];
-		let newL = text.charCodeAt(i) + key;
-		newText[i] = String.fromCharCode(newL)
+		let char = text.charCodeAt(i) + key;
+		newText[i] = String.fromCharCode(char)
 	}
 	newText = newText.join("");
 	console.log(newText);
