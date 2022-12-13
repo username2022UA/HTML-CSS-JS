@@ -7,6 +7,7 @@ function caesar(text, key) {
 	}
 	newText = newText.join("");
 	console.log(newText);
+
 	//console.log(typeof newText);
 	//console.log(text.length);
 }
