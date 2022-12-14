@@ -142,3 +142,122 @@ var presentableText = text.toLowerCase();
 if (presentableText.length > 0) {
 	//alert(presentableText);
 }
+
+var leter;
+console.log(typeof leter);
+var mass = [];
+console.log(typeof mass[0]);
+var object1 = {};
+console.log(typeof object1.name);
+
+//=================================
+
+var emot = "XOxxOO";
+var hugs = 0;
+var kisses = 0;
+
+emot = emot.trim();
+emot = emot.toUpperCase();
+for (var i = 0; i < emot.length; i++) {
+	if (emot.charAt(i) === "X") {
+		hugs++;
+	} else if (emot.charAt(i) == "O") {
+		kisses++;
+	}
+}
+console.log(hugs + " " + kisses)
+
+//============================
+
+var data = "name|phone|address";
+var val = data.substring(5, 10);
+console.log("Substring is " + val);
+val = data.substring(5);
+console.log("Substring is now " + val);
+
+//=============================
+
+function validate1(phoneNumber) {
+	if (phoneNumber.length > 8 || phoneNumber.length < 7) {
+		return false;
+	}
+	for (var i = 0; i < phoneNumber.length; i++) {
+		if (i === 3) {
+			if (phoneNumber.length === 8 && phoneNumber.charAt(i) !== '-') {
+				return false;
+			} else if (phoneNumber.length === 7 && isNaN(phoneNumber.charAt(i))) {
+				return false;
+			}
+		} else if (isNaN(phoneNumber.charAt(i))) {
+			return false;
+		}
+	}
+	return true;
+}
+
+//=============================
+
+
+//=============================
+
+function validate(phoneNumber) {
+	if (phoneNumber.length > 8 ||
+		phoneNumber.length < 7) {
+		return false;
+	}
+	var first = phoneNumber.substring(0, 3);
+	var second = phoneNumber.substring(phoneNumber.length - 4);
+	if (isNaN(first) || isNaN(second)) {
+		return false;
+	}
+	if (phoneNumber.length === 8) {
+		return (phoneNumber.charAt(3) === "-");
+	}
+	return true;
+}
+
+//=============================
+
+function validate(phoneNumber) {
+	if (phoneNumber.length <= 8 || phoneNumber.length >= 7) {
+		if (phoneNumber.length === 7 && isNaN(phoneNumber) === false) {
+			console.log(phoneNumber);
+			return true;
+		}
+		if (phoneNumber.length === 8 && (phoneNumber.charAt(3) === "-")) {
+			console.log(phoneNumber);
+			return true;
+		}
+	} else {
+		return false
+	}
+}
+validate("123-4567");
+
+//====================
+
+//====================
+
+function validate2(phoneNumber) {
+	if (phoneNumber.match(/^\d{3}-?\d{4}$/)) {
+		console.log(phoneNumber);
+		return true;
+	}
+	
+}
+validate2("123-4567");
+
+var data = "name|phone|address";
+var vals = data.split("|");
+console.log("Split array is ", vals);
+
+//===================================
+
+function Duck(sound) {
+	this.sound = sound;
+	this.quack = function () { console.log(this.sound); }
+}
+var toy = new Duck("quack quack");
+toy.quack();
+console.log(typeof toy);
+console.log(toy instanceof Duck);
