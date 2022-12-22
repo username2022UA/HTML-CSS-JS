@@ -84,3 +84,56 @@ for (const item of elemets) {
 elemets.forEach(item => {
 	console.log(item);
 });
+
+//=============== Домашка ==============//
+
+// Задача №1.
+//Получаем элемент
+const atributeName = document.querySelector('[data-say-hi]');
+const atributeName2 = document.querySelectorAll('[data-say-hi]');
+console.log(atributeName);
+console.log(atributeName2);
+
+//Получаем значение атрибута.
+const atributeValue = atributeName.getAttribute("data-say-hi");
+console.log(atributeValue);
+
+//Проверяем наличие атрибута.
+atributeName.hasAttribute("data-say-hi");
+console.log(atributeName.hasAttribute("data-say-hi"))
+//Устанавливаем значение атрибута.
+atributeName.setAttribute("data-say-hi", 'No');
+
+//Удаляем атрибут.
+//atributeName.removeAttribute("data-say-hi");
+
+// Задача №2.
+const elems = document.querySelectorAll('li');
+console.log(elems);
+console.log(elems[1]);
+const elems2 = document.querySelector('li');
+console.log(elems2);
+const elems3 = document.getElementsByTagName('li');
+console.log(elems3);
+console.log(elems3[1]);
+
+// Задача №3.
+const elementLike = document.getElementsByClassName("like");
+console.log(elementLike);
+
+const elementLike2 = document.querySelectorAll(".like");
+console.log(elementLike2);
+
+const elementLike3 = document.querySelector(".like");
+console.log(elementLike3);
+console.log(elementLike3.innerHTML);
+
+
+// Задача №4.
+// Куда добавится <li>Текст</li> ?
+const list = document.querySelector('ul');
+console.log(list);
+list.insertAdjacentHTML('beforebegin', '<li>Hi</li>');
+list.insertAdjacentHTML('beforeend', '<li>Hi</li>');
+const list2 = document.querySelector('ul');
+console.log(list2);
