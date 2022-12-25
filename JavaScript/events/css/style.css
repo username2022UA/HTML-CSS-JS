@@ -93,9 +93,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .form {
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
+  width: 200px;
   display: none;
 }
 
