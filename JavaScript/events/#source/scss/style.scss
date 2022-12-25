@@ -1,0 +1,41 @@
+
+@import "nullstyle.scss";
+
+.wrapper {
+	background-color: darkgrey;
+	height: 100%;
+}
+
+.block {
+	padding: 50px;
+}
+
+.btn {
+	width: 200px;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	color: #ffff;
+	padding: 10px; 
+	background-color: cadetblue;
+}
+
+.form {
+	width: max-content;
+	display: none;
+}
+
+.form-show {
+	display: block;
+}
+
+.text {
+	width: 200px;
+	height: 100px;
+	resize: none;
+	padding: 10px;
+	margin: 0px 0px 10px 0px;
+}
+
+.counter {}
