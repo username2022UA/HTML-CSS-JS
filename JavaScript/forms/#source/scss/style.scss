@@ -1,0 +1,77 @@
+
+@import "nullstyle.scss";
+
+.wrapper {
+	background-color: darkgrey;
+	height: 100%;
+	padding: 50px;
+}
+h1 {
+	font-size: 40px;
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	text-align: center;
+	margin: 0px 0px 50px 0px;
+}
+
+.red-title {
+	color: rgb(142, 49, 49);
+}
+
+.main-form {
+	display: flex;
+	flex-wrap: wrap;
+
+	&__column {
+		flex: 0 0 50%;
+		padding: 10px;
+	}
+
+	&__item {
+		margin: 0px 0px 30px 0px;
+	}
+
+	&__label {
+		display: block;
+		margin: 0px 0px 5px 0px;
+	}
+
+	&__input {
+		width: 80%;
+		color: #ffff;
+		background-color: #333;
+		border: 2px solid rgb(142, 49, 49);
+		border-radius: 10px;
+		padding: 10px;
+	}
+
+	&__textarea {
+		width: 80%;
+		height: 100px;
+		color: #ffff;
+		background-color: #333;
+		border: 2px solid rgb(142, 49, 49);
+		border-radius: 10px;
+		padding: 10px;
+	}
+
+	&__radio {
+		display: flex;
+	}
+
+	&__inline-label {
+		margin: 0px 0px 0px 5px;
+	}
+
+	&__select {
+		background-color: cadetblue;
+		width: 115px;
+	}
+
+	&__button {
+		border-radius: 10px;
+		background-color: cadetblue;
+		border: 2px solid rgb(142, 49, 49);
+		padding: 10px;
+		margin: 0px 0px 0px 10px;
+	}
+}

@@ -1,5 +1,5 @@
 
-function caesar(text, key) {
+function caesarIn(text, key) {
 	let newText = [];
 	for (let i = 0; i < text.length; i++) {
 		let char = text.charCodeAt(i);
@@ -46,7 +46,21 @@ function caesarOut(text, key) {
 	newText = newText.join("");
 	console.log(newText);
 }
-let text = "Hello! I am from America.";
-let textOut = "Mjqqt! N fr kwtr Frjwnhf.";
-caesar(text, 5);
-caesarOut(textOut, 5)
+//let textOut = "Mjqqt! N fr kwtr Frjwnhf.";
+//caesar(text, 5);
+//caesarOut(textOut, 5)
+const buttonIn = document.querySelector('#in');
+const buttonOut = document.querySelector('#out');
+
+document.getElementById('in').onclick = function() {
+	const text = document.getElementsByClassName('text-input').textContent;
+	alert(text);
+}
+/*document.addEventListener('click', function (event) {
+	if (event.target.closest('#in')) {
+		caesarIn(text, 5);
+	} else if ('#out') {
+		caesarOut(text, 5)
+	}
+});
+*/
