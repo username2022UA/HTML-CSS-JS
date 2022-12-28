@@ -119,6 +119,7 @@ h1 {
   background-color: #333;
   border: 2px solid rgb(142, 49, 49);
   border-radius: 10px;
+  resize: none;
   padding: 10px;
 }
 .main-form__radio {
@@ -128,8 +129,11 @@ h1 {
   margin: 0px 0px 0px 5px;
 }
 .main-form__select {
-  background-color: cadetblue;
   width: 115px;
+  background-color: #333;
+  color: #fff;
+  border-radius: 5px;
+  border: 2px solid rgb(142, 49, 49);
 }
 .main-form__button {
   border-radius: 10px;

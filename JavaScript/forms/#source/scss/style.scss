@@ -51,6 +51,7 @@ h1 {
 		background-color: #333;
 		border: 2px solid rgb(142, 49, 49);
 		border-radius: 10px;
+		resize: none;
 		padding: 10px;
 	}
 
@@ -63,8 +64,11 @@ h1 {
 	}
 
 	&__select {
-		background-color: cadetblue;
 		width: 115px;
+		background-color: #333;
+		color: #fff;
+		border-radius: 5px;
+		border: 2px solid rgb(142, 49, 49);
 	}
 
 	&__button {
