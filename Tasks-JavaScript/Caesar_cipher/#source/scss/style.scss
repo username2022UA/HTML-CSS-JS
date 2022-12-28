@@ -3,7 +3,7 @@
 .wrapper {
 	background-color: #666;
 	height: 100%;
-	padding: 30px 0px 0px 0px;
+	padding: 30px 0px 50px 0px;
 }
 
 .header {
@@ -13,7 +13,7 @@
 
 .title {
 	font-family: 'Rubik Mono One', sans-serif;
-	font-size: 100px;
+	font-size: 80px;
 	text-transform: uppercase;
 	text-align: center;
 	letter-spacing: 5px;
@@ -28,26 +28,39 @@
 	text-align: center;
 }
 
-.sub-title {
+.label {
+	display: block;
 	text-align: center;
 	color: cadetblue;
 	font-size: 25px;
 	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	margin: 0px 0px 10px 0px;
 }
 
-.text-input {
+.input {
+	border-radius: 5px;
+	text-align: center;
+	background-color: darkgray;
+	padding: 5px;
+	margin: 0px 0px 50px 0px;
+}
+
+.textarrea {
 	display: block;
 	width: 60%;
+	text-align: center;
+	background-color:darkgray;
 	height: max-content;
 	font-size: 18px;
+	border-radius: 10px;
 	padding: 10px;
-	margin: 50px auto 50px auto;
+	margin: 30px auto 50px auto;
 	resize: none;
 }
 
 .btn {
 	display: inline-block;
-	border-radius: 20px;
+	border-radius: 10px;
 	background-color: burlywood;
 	color:darkslategray;
 	font-size: 18px;
