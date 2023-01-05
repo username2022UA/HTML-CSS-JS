@@ -127,7 +127,6 @@ body {
 .map__input-text {
   width: 100px;
   text-align: center;
-  text-transform: uppercase;
   margin-right: 5px;
   padding: 5px;
 }
