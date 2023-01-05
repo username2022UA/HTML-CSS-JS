@@ -11,75 +11,64 @@
 <body>
 	<div class="wrapper">
 		<div class="map">
-			<div id="messageArea"></div>
-			<table>
-				<tr>
-					<td id="00"></td>
-					<td id="01"></td>
-					<td id="02"></td>
-					<td id="03"></td>
-					<td id="04"></td>
-					<td id="05"></td>
-					<td id="06"></td>
-				</tr>
-				<tr>
-					<td id="10"></td>
-					<td id="11"></td>
-					<td id="12"></td>
-					<td id="13"></td>
-					<td id="14"></td>
-					<td id="15"></td>
-					<td id="16"></td>
-				</tr>
-				<tr>
-					<td id="20"></td>
-					<td id="21"></td>
-					<td id="22"></td>
-					<td id="23"></td>
-					<td id="24"></td>
-					<td id="25"></td>
-					<td id="26"></td>
-				</tr>
-				<tr>
-					<td id="30"></td>
-					<td id="31"></td>
-					<td id="32"></td>
-					<td id="33"></td>
-					<td id="34"></td>
-					<td id="35"></td>
-					<td id="36"></td>
-				</tr>
-				<tr>
-					<td id="40"></td>
-					<td id="41"></td>
-					<td id="42"></td>
-					<td id="43"></td>
-					<td id="44"></td>
-					<td id="45"></td>
-					<td id="46"></td>
-				</tr>
-				<tr>
-					<td id="50"></td>
-					<td id="51"></td>
-					<td id="52"></td>
-					<td id="53"></td>
-					<td id="54"></td>
-					<td id="55"></td>
-					<td id="56"></td>
-				</tr>
-				<tr>
-					<td id="60"></td>
-					<td id="61"></td>
-					<td id="62"></td>
-					<td id="63"></td>
-					<td id="64"></td>
-					<td id="65"></td>
-					<td id="66"></td>
-				</tr>
-			</table>
-			<form>
-				<input type="text" id="guessInput" placeholder="A0">
-				<input type="button" id="fireButton" value="Fire!">
+			<div id="message" class="map__message">Hello!</div>
+			<div class="map__radar">
+				<div class="map__radar-gradient"></div>
+			</div>
+			<div class="map__grig">
+				<div id="00" class="map__grid-element"></div>
+				<div id="01" class="map__grid-element"></div>
+				<div id="02" class="map__grid-element"></div>
+				<div id="03" class="map__grid-element"></div>
+				<div id="04" class="map__grid-element"></div>
+				<div id="05" class="map__grid-element"></div>
+				<div id="06" class="map__grid-element"></div>
+				<div id="10" class="map__grid-element"></div>
+				<div id="11" class="map__grid-element"></div>
+				<div id="12" class="map__grid-element"></div>
+				<div id="13" class="map__grid-element"></div>
+				<div id="14" class="map__grid-element"></div>
+				<div id="15" class="map__grid-element"></div>
+				<div id="16" class="map__grid-element"></div>
+				<div id="20" class="map__grid-element"></div>
+				<div id="21" class="map__grid-element"></div>
+				<div id="22" class="map__grid-element"></div>
+				<div id="23" class="map__grid-element"></div>
+				<div id="24" class="map__grid-element"></div>
+				<div id="25" class="map__grid-element"></div>
+				<div id="26" class="map__grid-element"></div>
+				<div id="30" class="map__grid-element"></div>
+				<div id="31" class="map__grid-element"></div>
+				<div id="32" class="map__grid-element"></div>
+				<div id="33" class="map__grid-element"></div>
+				<div id="34" class="map__grid-element"></div>
+				<div id="35" class="map__grid-element"></div>
+				<div id="36" class="map__grid-element"></div>
+				<div id="40" class="map__grid-element"></div>
+				<div id="41" class="map__grid-element"></div>
+				<div id="42" class="map__grid-element"></div>
+				<div id="43" class="map__grid-element"></div>
+				<div id="44" class="map__grid-element"></div>
+				<div id="45" class="map__grid-element"></div>
+				<div id="46" class="map__grid-element"></div>
+				<div id="50" class="map__grid-element"></div>
+				<div id="51" class="map__grid-element"></div>
+				<div id="52" class="map__grid-element"></div>
+				<div id="53" class="map__grid-element"></div>
+				<div id="54" class="map__grid-element"></div>
+				<div id="55" class="map__grid-element"></div>
+				<div id="56" class="map__grid-element"></div>
+				<div id="60" class="map__grid-element"></div>
+				<div id="61" class="map__grid-element"></div>
+				<div id="62" class="map__grid-element"></div>
+				<div id="63" class="map__grid-element"></div>
+				<div id="64" class="map__grid-element"></div>
+				<div id="65" class="map__grid-element"></div>
+				<div id="66" class="map__grid-element"></div>
+			</div>
+			<form class="map__input">
+				<input id="text" type="text" class="map__input-text">
+				<button id="button" type="button" value="Fire!" class="map__input-btn">Fire</button>
 			</form>
 		</div>
 	</div>
