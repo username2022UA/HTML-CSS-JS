@@ -73,54 +73,146 @@ h1, h2, h3, h4, h5, h6 {
 
 /*--------------------*/
 body {
-  background-color: #000;
+  background: #000;
+}
+
+.wrapper {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
 
 .map {
-  position: relative;
   width: 1024px;
   height: 863px;
-  margin: auto;
+  margin: 0 auto;
   background: url(../img/board.jpg) no-repeat;
+  position: relative;
 }
-
-#messageArea {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  color: rgb(83, 175, 19);
+.map__message {
+  padding: 35px 0px 0px 0px;
+  text-align: center;
+  font-size: 25px;
+  color: burlywood;
+  margin: 0px 0px 0px 0px;
 }
-
-table {
+.map__radar {
   position: absolute;
+  width: 150px;
+  height: 390px;
+  top: 440px;
+  left: 460px;
+  transform-origin: top left;
+  overflow: hidden;
+  -webkit-animation: radar 4s linear infinite;
+          animation: radar 4s linear infinite;
+}
+.map__radar-gradient {
+  width: 200px;
+  height: 620px;
+  background: -webkit-linear-gradient(left, rgb(128, 194, 23) 0%, rgba(128, 194, 23, 0.99) 1%, rgba(128, 194, 23, 0) 100%), linear-gradient(to right, rgb(128, 194, 23) 0%, rgba(128, 194, 23, 0.99) 1%, rgba(128, 194, 23, 0) 100%);
+  transform: translate(-170px, -210px) rotate(-15deg);
+}
+.map__grig {
+  display: grid;
+  grid-template: repeat(7, 96px)/repeat(7, 96px);
+  position: absolute;
+  top: 98px;
   left: 172px;
-  top: 100px;
-  border-spacing: 0px;
 }
-
-td {
-  width: 96px;
-  height: 96px;
-}
-
-form {
+.map__input {
+  display: flex;
   position: absolute;
-  bottom: 0px;
-  right: 0px;
-  padding: 15px;
-  background-color: rgb(83, 175, 19);
+  top: 100px;
+  left: -150px;
+}
+.map__input-text {
+  width: 100px;
+  text-align: center;
+  margin-right: 5px;
+  padding: 5px;
+}
+.map__input-btn {
+  color: #fff;
+  text-transform: uppercase;
+  background-color: red;
+  padding: 5px 20px 5px 20px;
 }
 
-form input {
-  background-color: rgb(152, 207, 113);
-  border-color: rgb(83, 175, 19);
-  font-size: 1em;
+.miss {
+  background: url(../img/miss.png) center center no-repeat;
 }
 
 .hit {
   background: url(../img/ship.png) center center no-repeat;
 }
 
-.miss {
-  background: url(../img/miss.png) center center no-repeat;
+@-webkit-keyframes radar {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
+
+@keyframes radar {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/*
+body {
+	background-color: #000;
+}
+
+.map {
+	position: relative;
+	width: 1024px;
+	height: 863px;
+	margin: auto;
+	background: url(../img/board.jpg) no-repeat;
+}
+
+#messageArea {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	color: rgb(83, 175, 19);
+}
+
+table {
+	position: absolute;
+	left: 172px;
+	top: 100px;
+	border-spacing: 0px;
+}
+
+td {
+	width: 96px;
+	height: 96px;
+}
+
+form {
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+	padding: 15px;
+	background-color: rgb(83, 175, 19);
+}
+
+form input {
+	background-color: rgb(152, 207, 113);
+	border-color: rgb(83, 175, 19);
+	font-size: 1em;
+}
+
+.hit {
+	background: url(../img/ship.png) center center no-repeat;
+}
+
+.miss {
+	background: url(../img/miss.png) center center no-repeat;
+}
+*/

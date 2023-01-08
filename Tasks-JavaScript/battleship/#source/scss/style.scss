@@ -2,6 +2,97 @@
 @import "nullstyle.scss";
 
 body {
+	background: #000;
+}
+.wrapper {
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.map {
+	width: 1024px;
+	height: 863px;
+	margin: 0 auto;
+	background: url(../img/board.jpg) no-repeat;
+	position: relative;
+	&__message {
+		padding: 35px 0px 0px 0px;
+		text-align: center;
+		font-size: 25px;
+		color: burlywood;
+		margin: 0px 0px 0px 0px;
+	}
+
+	&__radar {
+		position: absolute;
+		width: 150px;
+		height: 390px;
+		top: 440px;
+		left: 460px;
+		transform-origin: top left;
+		overflow: hidden;
+		animation: radar 4s linear infinite;
+	}
+
+	&__radar-gradient {
+		width: 200px;
+		height: 620px;
+		background: -webkit-linear-gradient(left, rgba(128, 194, 23, 1) 0%, rgba(128, 194, 23, 0.99) 1%, rgba(128, 194, 23, 0) 100%),
+		linear-gradient(to right, rgba(128, 194, 23, 1) 0%, rgba(128, 194, 23, 0.99) 1%, rgba(128, 194, 23, 0) 100%);
+		transform: translate(-170px, -210px) rotate(-15deg);
+	}
+
+	&__grig {
+		display: grid;
+		grid-template: repeat(7,96px)/repeat(7,96px);
+		position: absolute;
+		top: 98px;
+		left: 172px;
+	}
+
+	//&__grid-element {}
+
+	&__input {
+		display: flex;
+		position: absolute;
+		top: 100px;
+		left: -150px;
+	}
+
+	&__input-text {
+		width: 100px;
+		text-align: center;
+		margin-right: 5px;
+		padding: 5px;
+	}
+
+	&__input-btn {
+		color: #fff;
+		text-transform: uppercase;
+		background-color: red;
+		padding: 5px 20px 5px 20px;
+	}
+}
+
+.miss {
+	background:url(../img/miss.png) center center no-repeat;
+}
+
+.hit {
+	background: url(../img/ship.png) center center no-repeat;
+}
+
+@keyframes radar {
+	0% {
+			transform: rotate(0deg);
+		}
+	
+		100% {
+			transform: rotate(360deg);
+		}
+}
+
+/*
+body {
 	background-color: #000;
 }
 
@@ -53,3 +144,4 @@ form input {
 .miss {
 	background: url(../img/miss.png) center center no-repeat;
 }
+*/
