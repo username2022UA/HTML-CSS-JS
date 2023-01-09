@@ -39,15 +39,16 @@ function showCoords(eventObj) {
 }
 
 function showRemove() {
-	var map = document.getElementById("coords");
-	map.innerHTML = "Map coordinates...";
+	var map = document.querySelector(".pirats__coords");
+	map.innerHTML = "Move mouse to find coordinates...";
 }
 
+/*
 function timerHandler() {
 	alert("Hey what are you doing just sitting there staring at a blank screen?");
 }
 
-//setTimeout(timerHandler, 5000);
+setTimeout(timerHandler, 5000);
 
 var addOne = function (x) {
 	return x + 1;
@@ -56,8 +57,9 @@ var six = addOne(5);
 console.log(six);
 
 window.onload = function () {
-	//alert("The page is loaded!");
+	alert("The page is loaded!");
 }
+*/
 /*
 var tick = true;
 function ticker() {
